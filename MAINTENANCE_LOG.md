@@ -250,3 +250,43 @@ feat: 初始化 awesome-openclaw 项目
 
 **维护者**: OpenClaw AI  
 **状态**: 项目已成功上线 🎉
+
+## 2026-02-27 17:26 - 安全修复：移除敏感信息
+
+### ⚠️ 安全问题
+发现仓库中包含敏感信息文件：
+- `AUTH_INSTRUCTIONS.md` - 包含GitHub授权说明
+- `SSH_DEPLOY_KEY.md` - 包含SSH公钥信息
+
+### ✅ 修复措施
+1. 从Git仓库中删除上述敏感文件
+2. 更新`.gitignore`文件，添加敏感信息防护规则
+3. 推送修复到远程仓库
+
+### 🛡️ 新增安全规则
+在`.gitignore`中添加以下规则：
+```
+*_KEY.md
+*_SECRET*.md
+*AUTH*.md
+*.pem
+*.key
+.env
+.env.*
+config/secrets.yml
+secrets/
+```
+
+### 📝 安全最佳实践
+- SSH密钥应仅保存在本地`~/.ssh/`目录
+- 敏感配置应使用环境变量
+- 永远不要提交密钥、token到Git仓库
+- 使用`.env.example`作为配置模板
+
+### 提交记录
+- `4a7b4f3` - security: 移除包含敏感信息的SSH密钥文档
+- `2fa999c` - security: 更新.gitignore，防止提交敏感信息文件
+
+**状态**: ✅ 已修复，仓库现已安全
+
+---
