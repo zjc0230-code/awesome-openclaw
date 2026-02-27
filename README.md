@@ -87,8 +87,8 @@ openclaw ask "使用 smart-router 分析这份长文档" --file report.pdf
 |-------|------|------|----------|
 | [gog](skills/productivity/gog.md) | ⭐⭐⭐⭐⭐ 9.5/10 | Google Workspace 全能控制器 | 办公自动化、邮件管理 |
 | [feishu-file-fetch](skills/productivity/feishu-file-fetch.md) | ⭐⭐⭐⭐⭐ 9.0/10 | 飞书文件自动化处理 | 团队协作、文件处理 |
-| [nano-pdf](skills/productivity/nano-pdf.md) | ⭐⭐⭐⭐⭐ | PDF 智能处理 | 文档审阅、合同分析 |
-| [1password](skills/productivity/1password.md) | ⭐⭐⭐⭐ | 密码管理器集成 | 安全管理、自动填充 |
+| [nano-pdf](skills/productivity/nano-pdf.md) | ⭐⭐⭐⭐ 8.5/10 | PDF 智能处理 | 文档审阅、合同分析 |
+| [smart-router](skills/ai-enhancement/smart-router.md) | ⭐⭐⭐⭐⭐ 9.2/10 | 多模型智能路由 | 成本优化、性能平衡 |
 
 [📂 查看完整列表](skills/productivity/)
 
@@ -148,6 +148,7 @@ openclaw ask "使用 smart-router 分析这份长文档" --file report.pdf
 
 | Skill | 评分 | 描述 | 推荐场景 |
 |-------|------|------|----------|
+| [1password](skills/security/1password.md) | ⭐⭐⭐⭐⭐ 9.0/10 | 企业级密码管理集成 | 密码管理、安全审计 |
 | [security-suite](skills/security/security-suite.md) | ⭐⭐⭐⭐⭐ | 系统安全扫描 | 定期安全检查 |
 | [privacy-guard](skills/security/privacy-guard.md) | ⭐⭐⭐⭐ | 隐私保护工具 | 数据加密、匿名化 |
 
@@ -184,6 +185,12 @@ openclaw ask "使用 smart-router 分析这份长文档" --file report.pdf
 适合日常办公和团队协作
 ```bash
 openclaw skill install gog feishu-file-fetch nano-pdf 1password
+```
+
+### 🔐 安全套装
+适合安全管理和隐私保护
+```bash
+openclaw skill install 1password security-suite privacy-guard
 ```
 
 ### 💻 开发者套装
@@ -280,13 +287,13 @@ openclaw workflow run morning-routine
 openclaw ask "用 ecap-security-auditor 审查 PR #123，找出安全漏洞"
 ```
 
-### 案例 3：内容创作流水线
+### 案例 3：智能文档安全处理
 ```bash
-# 从研究到发布的完整流程
-openclaw workflow run content-pipeline \
-  --input "AI 领域最新动态" \
-  --output blog_post.md
-# 内部流程：tavily → summarize → copywriting → publish
+# 自动化合同处理工作流
+openclaw workflow run secure-doc-processing \
+  --input "./contracts/2026-02" \
+  --output "./processed/2026-02"
+# 内部流程：nano-pdf（加水印合并）→ 1password（访问控制）→ 审计日志
 ```
 
 [📂 查看更多案例](examples/)
@@ -327,18 +334,18 @@ openclaw workflow run content-pipeline \
 
 | 类别 | Skills 数量 | 已评测 | 更新时间 |
 |------|-------------|--------|----------|
-| 🎯 生产力工具 | 120+ | 2 | 2026-02-27 |
+| 🎯 生产力工具 | 120+ | 3 | 2026-02-27 |
 | 💻 开发者工具 | 543+ | 1 | 2026-02-27 |
 | 🧠 AI 增强 | 287+ | 0 | 2026-02-27 |
 | 🔍 信息检索 | 253+ | 0 | 2026-02-27 |
 | 💼 商业营销 | 143+ | 0 | 2026-02-27 |
-| 🔐 安全隐私 | 89+ | 0 | 2026-02-27 |
+| 🔐 安全隐私 | 89+ | 1 | 2026-02-27 |
 | 🎨 创意媒体 | 156+ | 0 | 2026-02-27 |
 | 🏠 智能自动化 | 72+ | 0 | 2026-02-27 |
-| **总计** | **3002+** | **3** | 2026-02-27 |
+| **总计** | **3002+** | **5** | 2026-02-27 |
 
 *已筛选过滤 2703 个低质量/恶意 Skills*
-*深度评测进度：3/100（目标：6周内完成）*
+*深度评测进度：5/100（目标：6周内完成）*
 
 ---
 
