@@ -11,6 +11,7 @@
 - [内容创作](#内容创作)
 - [数据分析](#数据分析)
 - [个人效率](#个人效率)
+- [技术文档](#技术文档)
 
 ---
 
@@ -472,6 +473,65 @@ openclaw ask "用 copywriting 生成个性化健康建议：
 
 ---
 
+## 技术文档
+
+### 案例 11: AI驱动的技术文档可视化系统
+
+**场景描述**: 将复杂的技术文档自动转换为可视化图表，提升可读性和维护效率
+
+**使用的 Skills**: `diagram-generator`, `agent-browser`, `personal-assistant`
+
+**详细案例**: [查看完整案例](./case-006-technical-documentation-visualization.md)
+
+**核心亮点**:
+- 📊 自动生成流程图、序列图、架构图等多种图表
+- 🤖 AI 驱动的内容解析和图表生成
+- 🔄 与 Git 集成，实现文档和图表同步更新
+- 📈 文档可读性提升 60%，维护时间减少 50%
+
+**快速演示**:
+
+```bash
+# 1. API文档自动配图
+openclaw ask "分析以下API文档，生成序列图：
+
+POST /api/user/register
+1. 参数校验
+2. 检查用户名
+3. 密码加密
+4. 发送邮件
+5. 返回结果
+
+请生成包含Client、Gateway、UserService、EmailService的序列图"
+
+# 2. 业务流程可视化
+openclaw ask "将订单处理流程转换为状态图：
+待支付 -> 支付成功 -> 待发货 -> 待收货 -> 已完成
+包含超时取消和售后流程"
+
+# 3. 系统架构图生成
+openclaw ask "基于以下描述生成微服务架构图：
+- 前端: Web + Mobile
+- 网关: API Gateway
+- 服务: 用户服务、订单服务、支付服务
+- 数据: MySQL主从、Redis集群、Kafka"
+```
+
+**实际效果**:
+- ⏱️ 图表生成从小时级降至分钟级
+- 📝 新员工文档理解时间减少 67%
+- 🔄 文档更新周期从天级降至小时级
+- 💰 年ROI达到 14.4倍（10人团队）
+
+**适用场景**:
+- API接口文档配图
+- 系统架构可视化
+- 业务流程梳理
+- 技术培训材料
+- 客户交付文档
+
+---
+
 ## 🎯 最佳实践总结
 
 ### 1. 工作流设计原则
@@ -490,6 +550,7 @@ openclaw ask "用 copywriting 生成个性化健康建议：
 | 内容创作 | tavily + summarize + copywriting + veo | 研究到发布 |
 | 数据分析 | tavily + smart-router + copywriting | 数据到洞察 |
 | 知识管理 | cognitive-memory + summarize + obsidian | 沉淀到复用 |
+| 技术文档 | diagram-generator + agent-browser + personal-assistant | 文档可视化 |
 
 ### 3. 成本优化建议
 
