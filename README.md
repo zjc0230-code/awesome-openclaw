@@ -123,7 +123,8 @@ awesome-openclaw/
 │   │   ├── feishu-file-fetch.md   # 飞书文件处理
 │   │   ├── nano-pdf.md            # PDF 智能处理
 │   │   ├── notion-workspace.md    # Notion 知识库管理
-│   │   └── airtable-sync.md       # Airtable 数据协同
+│   │   ├── airtable-sync.md       # Airtable 数据协同
+│   │   └── 1password-cli.md       # 1Password 密钥管理
 │   ├── development/               # 开发者工具
 │   │   ├── frontend-design.md     # 前端 UI 生成器
 │   │   └── vercel-react-best-practices.md  # React 性能优化
@@ -146,7 +147,7 @@ awesome-openclaw/
 
 | 分类 | 总数 | 已评测 | 进度 | 平均评分 |
 |------|------|--------|------|----------|
-| 🎯 生产力工具 | 120+ | 5 | 4.2% | 9.3/10 |
+| 🎯 生产力工具 | 120+ | 6 | 5.0% | 9.3/10 |
 | 💻 开发者工具 | 543+ | 2 | 0.4% | 9.8/10 |
 | 🧠 AI 增强 | 287+ | 1 | 0.3% | 9.2/10 |
 | 🔍 信息检索 | 253+ | 1 | 0.4% | 9.5/10 |
@@ -154,7 +155,7 @@ awesome-openclaw/
 | 🔐 安全隐私 | 89+ | 1 | 1.1% | 9.0/10 |
 | 🎨 创意媒体 | 156+ | 1 | 0.6% | 9.4/10 |
 | 🏠 智能自动化 | 72+ | 1 | 1.4% | 9.3/10 |
-| **总计** | **3002+** | **13** | **0.43%** | **9.3/10** |
+| **总计** | **3002+** | **14** | **0.47%** | **9.3/10** |
 
 ### ⏱️ 优化时间线
 
@@ -169,7 +170,8 @@ awesome-openclaw/
 ├── 19:00 - 优化 #6（n8n-integration, api-gateway）
 ├── 19:30 - 优化 #7（clawra）
 ├── 20:33 - 优化 #8（notion-workspace）
-└── 21:00 - 优化 #9（airtable-sync + 案例4）← 当前
+├── 21:00 - 优化 #9（airtable-sync + 案例4）
+└── 22:00 - 优化 #10（1password-cli）← 当前
     [AI 持续优化中...]
 ```
 
