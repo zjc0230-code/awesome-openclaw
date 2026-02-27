@@ -85,8 +85,8 @@ openclaw ask "使用 smart-router 分析这份长文档" --file report.pdf
 
 | Skill | 评分 | 描述 | 推荐场景 |
 |-------|------|------|----------|
-| [gog](skills/productivity/gog.md) | ⭐⭐⭐⭐⭐ | Google Workspace 全能控制器 | 办公自动化、邮件管理 |
-| [feishu-file-fetch](skills/productivity/feishu.md) | ⭐⭐⭐⭐⭐ | 飞书文件批量下载 | 团队协作、知识沉淀 |
+| [gog](skills/productivity/gog.md) | ⭐⭐⭐⭐⭐ 9.5/10 | Google Workspace 全能控制器 | 办公自动化、邮件管理 |
+| [feishu-file-fetch](skills/productivity/feishu-file-fetch.md) | ⭐⭐⭐⭐⭐ 9.0/10 | 飞书文件自动化处理 | 团队协作、文件处理 |
 | [nano-pdf](skills/productivity/nano-pdf.md) | ⭐⭐⭐⭐⭐ | PDF 智能处理 | 文档审阅、合同分析 |
 | [1password](skills/productivity/1password.md) | ⭐⭐⭐⭐ | 密码管理器集成 | 安全管理、自动填充 |
 
