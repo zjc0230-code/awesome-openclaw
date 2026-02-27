@@ -1,0 +1,102 @@
+name: Skills Validation
+
+on:
+  schedule:
+    # 每周一早上 8 点运行
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'skills/**/*.md'
+
+jobs:
+  validate-skills:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests pyyaml beautifulsoup4
+      
+      - name: Validate Skills Links
+        run: |
+          python .github/scripts/validate_links.py
+      
+      - name: Check GitHub Stars
+        run: |
+          python .github/scripts/check_stars.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Generate Report
+        run: |
+          python .github/scripts/generate_report.py
+      
+      - name: Upload Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: validation-report
+          path: reports/validation-report.md
+      
+      - name: Comment on PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('reports/validation-report.md', 'utf8');
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: report
+            });
+
+  security-scan:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Security Scan
+        run: |
+          echo "Running security scan on new skills..."
+          # TODO: Integrate with VirusTotal API
+      
+      - name: Check for malicious patterns
+        run: |
+          grep -r "eval\|exec\|rm -rf" skills/ && exit 1 || echo "No suspicious patterns found"
+
+  update-stats:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule'
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Update Statistics
+        run: |
+          python .github/scripts/update_stats.py
+      
+      - name: Commit Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git commit -m "chore: update statistics [skip ci]" || echo "No changes"
+          git push
