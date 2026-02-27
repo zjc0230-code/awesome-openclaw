@@ -47,3 +47,14 @@ node_modules/
 # Build outputs
 dist/
 build/
+
+# 敏感信息文件
+*_KEY.md
+*_SECRET*.md
+*AUTH*.md
+*.pem
+*.key
+.env
+.env.*
+config/secrets.yml
+secrets/
