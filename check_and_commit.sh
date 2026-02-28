@@ -1,12 +1,13 @@
 #!/bin/bash
 
-# 每30分钟检查并提交更改的脚本
+# 每30分钟检查并提交更改的脚本（带通知功能）
 # 路径: /data/workspace/awesome-openclaw/check_and_commit.sh
 
 PROJECT_DIR="/data/workspace/awesome-openclaw"
 LOG_FILE="$PROJECT_DIR/MAINTENANCE_LOG.md"
 TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 COMMIT_PREFIX="maintenance: auto-commit $(date '+%Y-%m-%d %H:%M')"
+NOTIFY_SCRIPT="$PROJECT_DIR/notify_result.sh"
 
 echo "[$TIMESTAMP] 开始检查git状态..."
 
@@ -14,6 +15,7 @@ cd "$PROJECT_DIR" || exit 1
 
 # 检查git状态
 GIT_STATUS=$(git status --porcelain)
+COMMIT_ID=""
 
 if [ -n "$GIT_STATUS" ]; then
     echo "[$TIMESTAMP] 检测到未提交的更改："
@@ -25,12 +27,15 @@ if [ -n "$GIT_STATUS" ]; then
     # 提交更改
     COMMIT_MSG="$COMMIT_PREFIX - 检测到文件更改"
     git commit -m "$COMMIT_MSG"
+    COMMIT_ID=$(git rev-parse --short HEAD)
     
     echo "[$TIMESTAMP] 已提交更改"
     RESULT="检测到未提交的更改并已提交"
+    STATUS="发现更改并提交 ✅"
 else
     echo "[$TIMESTAMP] 工作树是干净的"
     RESULT="工作树干净，更新维护日志时间戳"
+    STATUS="工作树干净，已更新维护日志 ✅"
     
     # 更新MAINTENANCE_LOG.md的时间戳
     TIMESTAMP_LINE="## $TIMESTAMP - 定期检查：维护日志时间戳更新 🕐"
@@ -54,6 +59,7 @@ else
     git add "$LOG_FILE"
     COMMIT_MSG="$COMMIT_PREFIX - 维护日志时间戳更新"
     git commit -m "$COMMIT_MSG"
+    COMMIT_ID=$(git rev-parse --short HEAD)
     
     echo "[$TIMESTAMP] 已更新维护日志时间戳并提交"
 fi
@@ -63,3 +69,7 @@ echo "[$TIMESTAMP] 定期检查完成 - $RESULT" >> "$PROJECT_DIR/auto_commit.lo
 
 echo "[$TIMESTAMP] 脚本执行完成"
 
+# 发送通知
+if [ -f "$NOTIFY_SCRIPT" ]; then
+    bash "$NOTIFY_SCRIPT" "$TIMESTAMP" "$STATUS" "$RESULT" "$COMMIT_ID" "$COMMIT_MSG"
+fi
