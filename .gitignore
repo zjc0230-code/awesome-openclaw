@@ -58,3 +58,11 @@ build/
 .env.*
 config/secrets.yml
 secrets/
+
+# 自动化监控脚本生成的临时文件
+last_notification.txt
+notification_watcher.py
+send_notification.sh
+.last_notification_hash
+*.pid
+monitor.log
