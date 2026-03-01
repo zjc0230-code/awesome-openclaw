@@ -82,7 +82,9 @@ MESSAGE="🔄 **Git自动提交检查结果**
 ---
 通知生成时间: $TIMESTAMP"
 
-# 输出通知消息到标准输出，供notify工具捕获
-echo "NOTIFICATION_BEGIN"
-echo "$MESSAGE"
-echo "NOTIFICATION_END"
+# 保存通知消息到文件
+NOTIFICATION_FILE="$PROJECT_DIR/last_notification.txt"
+echo "$MESSAGE" > "$NOTIFICATION_FILE"
+
+# 输出JSON格式的通知供系统捕获（由AI系统解析并调用notify工具）
+echo "{\"action\":\"notify\",\"title\":\"🔄 Git自动提交检查完成\",\"message\":\"$MESSAGE\",\"exit_code\":0}"
