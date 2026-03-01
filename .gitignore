@@ -66,3 +66,12 @@ send_notification.sh
 .last_notification_hash
 *.pid
 monitor.log
+.pending_notify.txt
+.pending_notification.txt
+.pending_notification.json
+.last_notify_time.txt
+check_and_send_notify.sh
+auto_commit.log
+cron_output.log
+*_monitor.log
+30min_monitor.log
