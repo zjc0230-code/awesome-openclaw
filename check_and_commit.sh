@@ -16,6 +16,9 @@ cd "$PROJECT_DIR" || exit 1
 # 检查git状态
 GIT_STATUS=$(git status --porcelain)
 COMMIT_ID=""
+STATUS=""
+RESULT=""
+COMMIT_MSG=""
 
 if [ -n "$GIT_STATUS" ]; then
     echo "[$TIMESTAMP] 检测到未提交的更改："
@@ -30,12 +33,12 @@ if [ -n "$GIT_STATUS" ]; then
     COMMIT_ID=$(git rev-parse --short HEAD)
     
     echo "[$TIMESTAMP] 已提交更改"
-    RESULT="检测到未提交的更改并已提交"
     STATUS="发现更改并提交 ✅"
+    RESULT="检测到未提交的更改并已提交"
 else
     echo "[$TIMESTAMP] 工作树是干净的"
-    RESULT="工作树干净，更新维护日志时间戳"
     STATUS="工作树干净，已更新维护日志 ✅"
+    RESULT="工作树干净，更新维护日志时间戳"
     
     # 更新MAINTENANCE_LOG.md的时间戳
     TIMESTAMP_LINE="## $TIMESTAMP - 定期检查：维护日志时间戳更新 🕐"
