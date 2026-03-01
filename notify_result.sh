@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# 通知脚本 - 记录检查结果
+# 通知脚本 - 使用notify工具通知用户检查结果
 # 路径: /data/workspace/awesome-openclaw/notify_result.sh
-# 注意：此脚本记录通知信息到文件，实际的notify功能需要在对话环境中调用
 
 TIMESTAMP="$1"
 STATUS="$2"
@@ -37,3 +36,12 @@ cat > "$NOTIFICATION_FILE" << EOF
 EOF
 
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] 通知信息已记录到 $NOTIFICATION_FILE"
+
+# 输出通知内容供notify工具捕获
+echo "=== AUTO COMMIT NOTIFICATION ==="
+echo "TIME: $TIMESTAMP"
+echo "STATUS: $STATUS"
+echo "RESULT: $RESULT"
+echo "COMMIT_ID: $COMMIT_ID"
+echo "COMMIT_MSG: $COMMIT_MSG"
+echo "=== END NOTIFICATION ==="
