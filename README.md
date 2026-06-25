@@ -21,3 +21,27 @@
 ### Author
 
 zjc0230 / zjc0230@gmail.com
+
+---
+
+## Skills
+
+### jupyter-live-kernel
+
+Iterative Python via live Jupyter kernel (hamelnb). Interactive REPL with inline plots, rich output.
+
+**Use cases**: Data exploration, debugging, learning libraries, prototyping
+
+**Pros**: Live feedback, inline plots, rich output, easy to switch code/output
+
+**Cons**: Requires Python, not shareable as notebook files
+
+**Installation**: `pip install hamelnb`
+
+**Quick start**: `jupyter-kernel --kernel-name myenv --python python3`
+
+**Difficulty**: easy
+
+**Token cost**: ~2.5K tokens (add) + 1K tokens (update README)
+
+**Last updated**: 2026-06-26
