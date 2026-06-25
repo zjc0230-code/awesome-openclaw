@@ -1,4 +1,3 @@
----
 name: jupyter-live-kernel
 description: "Iterative Python via live Jupyter kernel (hamelnb). Interactive REPL with inline plots, rich output."
 version: 1.0.0
@@ -27,7 +26,6 @@ metadata:
       - Jupyter Notebook
       - IPython REPL
       - VS Code + Jupyter
----
 
 # Jupyter Live Kernel
 
@@ -49,41 +47,77 @@ jupyter-kernel --kernel-name myenv --python python3
 ipython --kernel=myenv
 ```
 
-## Features
+## Usage Examples
 
-- **Live kernel**: No need to restart between edits
-- **Inline plots**: Matplotlib plots render directly in REPL
-- **Rich output**: HTML, Markdown, LaTeX supported
-- **Auto-completion**: Tab completion and introspection
-- **History**: Command history with up/down arrows
-
-## Use Cases
-
-1. **Data exploration**: Load data, inspect, visualize interactively
-2. **Debugging**: Add print statements, check intermediate values
-3. **Learning**: Try new libraries with immediate feedback
-4. **Prototyping**: Test ideas without writing full scripts
-
-## Tips
-
-- Use `%matplotlib inline` for plot rendering
-- Access kernel via `ipython --kernel=<name>`
-- Save sessions to JSON with `jupyter-kernel --save`
-- Share code between notebooks and REPL
-
-## Examples
+### 1. Interactive Data Exploration
 
 ```python
 import pandas as pd
-import matplotlib.pyplot as plt
+import numpy as np
 
 # Load data
-df = pd.read_csv('data.csv')
+df = pd.DataFrame({
+    'x': np.random.randn(100),
+    'y': np.random.randn(100)
+})
 
-# Quick visualization
-df.plot(kind='bar')
-plt.show()
-
-# Interactive analysis
-df['column'].describe()
+# Interactive plotting
+df.plot.scatter(x='x', y='y')
 ```
+
+### 2. Debugging with Rich Output
+
+```python
+import numpy as np
+
+# Test array operations
+arr = np.random.rand(10, 10)
+print(f"Shape: {arr.shape}")
+print(f"Mean: {arr.mean():.4f}")
+print(f"Std: {arr.std():.4f}")
+
+# Inline visualization
+arr.T.plot()
+```
+
+### 3. Learning New Libraries
+
+```python
+import matplotlib.pyplot as plt
+
+# Quick prototype
+x = np.linspace(0, 10, 100)
+for func in [np.sin, np.cos, np.tan]:
+    plt.plot(x, func(x), label=func.__name__)
+
+plt.legend()
+plt.show()
+```
+
+## Common Issues
+
+### Kernel not found
+```bash
+# Create kernel first
+jupyter-kernel --kernel-name myenv --python python3
+```
+
+### Rich output not showing
+```python
+# Ensure matplotlib backend is set
+import matplotlib
+matplotlib.use('inline')  # Required for inline plots
+```
+
+### IPython kernel not available
+```bash
+# Install IPython if missing
+pip install ipython
+```
+
+## Best Practices
+
+- Use for interactive development and testing
+- Keep sessions focused on specific tasks
+- Save important results to files for reproducibility
+- Use `%%timeit` magic for performance testing
