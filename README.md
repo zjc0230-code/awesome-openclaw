@@ -1,21 +1,10 @@
-## awesome-openclaw
+## awesome-skills
 
-一个使用 OpenClaw 框架构建的高效游戏项目。
-
-### Features
-
-- **工具类技能**: 使用 OpenClaw 框架提供的工具进行高效开发。
-- **营销类技能**: 帮助游戏在市场上获得更多关注。
-
-### Getting Started
-
-- 克隆仓库: `git clone <仓库地址>`
-- 运行项目: `cd awesome-openclaw && python run.py`
+AI 技能精选库 — 收录 Hermes/Cursor 高价值 Skills，工具类、营销类优先，持续迭代优化。
 
 ### Contributing
-
-贡献代码需要符合以下规范:
-- 内容真实，禁止密钥入库。
+- 内容真实，禁止密钥入库
+- 必须使用 commit + push 格式
 - 必须使用 commit + push 格式。
 
 ### Author
