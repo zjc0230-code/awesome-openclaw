@@ -121,3 +121,42 @@ pip install ipython
 - Keep sessions focused on specific tasks
 - Save important results to files for reproducibility
 - Use `%%timeit` magic for performance testing
+
+## Performance Tips
+
+```bash
+# Pre-load frequently used libraries to speed up kernel startup
+# Create ~/.config/jupyter/kernels/myenv/kernel.json:
+{
+  "argv": [
+    "python",
+    "-m",
+    "hamelnb",
+    "--kernel-name",
+    "{connection_file}",
+    "{connection_file}"
+  ],
+  "display_name": "myenv (optimized)",
+  "language": "python"
+}
+```
+
+## Integration with IDEs
+
+### VS Code
+- Install Python extension
+- Select "myenv" kernel in status bar
+- Use inline plots with Jupyter inline backend
+
+### PyCharm
+- Configure interpreter to myenv
+- Use "Jupyter Notebook" console for interactive sessions
+
+## Alternatives Comparison
+
+| Tool | Best For | Learning Curve | Performance |
+|------|----------|----------------|-------------|
+| hamelnb (this) | Quick REPL, inline plots | Easy | Fast startup |
+| Jupyter Notebook | Sharing results, documentation | Medium | Slower startup |
+| IPython | Classic REPL, extensive debugging | Easy | Fast |
+| VS Code + Jupyter | IDE integration, debugging | Medium | Medium |
