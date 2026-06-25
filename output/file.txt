@@ -1,0 +1,1 @@
+openclaw OK commit=<short_hash> <one_line_summary>
