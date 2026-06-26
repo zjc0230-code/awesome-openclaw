@@ -80,9 +80,10 @@ Automate posting to multiple social platforms (Twitter/X, LinkedIn, Reddit) usin
 
 ## Optimization Log
 
-|||||||| Date | Skill | Change | Token Cost |
-||||------|-------|--------|------------|
-||2026-06-27 05:46 | README | Cleanup stale entries, add social-media-automator | ~1K tokens |
-||2026-06-26 15:00 | jupyter-live-kernel | Performance tips, IDE integration, alternatives comparison | ~4K tokens |
-||2026-06-26 | jupyter-live-kernel | Add profile caching, import caching, updated token cost | ~1K tokens |
+||||||||| Date | Skill | Change | Token Cost |
+|||||------|-------|--------|------------|
+|||2026-06-27 06:15 | social-media-automator | Add complete post-twitter.sh script with error handling, usage docs | ~1K tokens |
+||||||2026-06-27 05:46 | README | Cleanup stale entries, add social-media-automator | ~1K tokens |
+||||||2026-06-26 15:00 | jupyter-live-kernel | Performance tips, IDE integration, alternatives comparison | ~4K tokens |
+||||||2026-06-26 | jupyter-live-kernel | Add profile caching, import caching, updated token cost | ~1K tokens |
 
