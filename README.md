@@ -84,9 +84,26 @@ image-to-ascii image.jpg
 
 **Alternatives**: asciidoctor, toilet, aasii
 
+**Alternatives**: asciidoctor, toilet, aasii
+**Difficulty**: easy
+**Token cost**: ~2.5K tokens (add) + 1K tokens (update README)
+
+**Last updated**: 2026-06-26
 **Difficulty**: easy
 
-**Token cost**: ~2.5K tokens (add) + 1K tokens (update README)
+### zapier-mcp
+
+Connect 7000+ apps via Claude with natural language workflows. Zero-code AI integration, 60-500x efficiency gain.
+
+**Use cases**: Cross-app automation, AI workflows, business process optimization, data synchronization
+**Pros**: Natural language control, unified interface, instant setup, AI-driven decision making
+**Cons**: Requires Claude Pro/Max, free tier limited to 100 executions/month
+
+**Installation**: Create MCP server at https://mcp.zapier.com, configure Claude Desktop
+**Quick start**: "Create a Zap that sends starred Gmail to Notion"
+
+**Difficulty**: easy
+**Token cost**: ~3K tokens (add) + 2K tokens (update README)
 
 **Last updated**: 2026-06-26
 **Difficulty**: easy
@@ -98,3 +115,4 @@ image-to-ascii image.jpg
 ||| Date | Skill | Change | Token Cost |
 ||------|-------|--------|------------|
 | 2026-06-26 | jupyter-live-kernel | Added Performance Tips, IDE integration, alternatives comparison | ~4K tokens |
+| 2026-06-26 | zapier-mcp | Added entry to README with summary and token cost | ~5K tokens |
