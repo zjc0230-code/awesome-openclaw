@@ -89,9 +89,14 @@ image-to-ascii image.jpg
 ```
 
 **Common patterns**:
-- Terminal headers: `figlet -f banner -c "PROJECT" | boxes -d bubble`
-- Status badges: `echo "✓ Done" | boxes -d dog -a c`
-- ASCII logos: `figlet -f slant -c "MAZAI-1" | boxes -d shadow`
+|- Terminal headers: `figlet -f banner -c "PROJECT" | boxes -d bubble`
+|- Status badges: `echo "✓ Done" | boxes -d dog -a c`
+|- ASCII logos: `figlet -f slant -c "MAZAI-1" | boxes -d shadow`
+|- Code blocks: `cat script.py | boxes -d fold -a c`
+|- Git commit messages: `echo "feat: add new feature" | boxes -d dog -a c`
+|- Welcome screens: `figlet -f cyber "Welcome" && cowsay -f dragon "System Ready"`
+|- Time stamps: `date +"%Y-%m-%d %H:%M" | boxes -d bubble -a c`
+|- Error alerts: `echo "⚠ ERROR: Connection Failed" | boxes -d alert -a c`
 
 **Difficulty**: easy
 
@@ -125,13 +130,14 @@ Connect 7000+ apps via Claude with natural language workflows. Zero-code AI inte
 
 ## Optimization Log
 
-|||||| Date | Skill | Change | Token Cost |
-||------|-------|--------|------------|
-||2026-06-26 15:00 | jupyter-live-kernel | Performance tips, IDE integration, alternatives comparison | ~4K tokens |
-||2026-06-26 | jupyter-live-kernel | Add profile caching, import caching, updated token cost | ~1K tokens |
-||2026-06-26 | zapier-mcp | Added common patterns (data sync, notification, routing, approval) | ~3K tokens |
-||2026-06-26 | n8n-integration | Added entry with key features and use cases | ~4K tokens |
-||2026-06-26 | README | Optimization log entry for scheduled iteration | ~3K tokens |
+||||||| Date | Skill | Change | Token Cost |
+|||------|-------|--------|------------|
+|||2026-06-26 15:00 | jupyter-live-kernel | Performance tips, IDE integration, alternatives comparison | ~4K tokens |
+|||2026-06-26 | jupyter-live-kernel | Add profile caching, import caching, updated token cost | ~1K tokens |
+|||2026-06-26 | zapier-mcp | Added common patterns (data sync, notification, routing, approval) | ~3K tokens |
+|||2026-06-26 | n8n-integration | Added entry with key features and use cases | ~4K tokens |
+|||2026-06-26 | README | Optimization log entry for scheduled iteration | ~3K tokens |
+|||2026-06-26 20:45 | ascii-art | Added 5 practical patterns (code blocks, git commits, welcome screens, timestamps, alerts) | ~2K tokens |
 ### n8n-integration
 
 Enterprise-grade workflow automation orchestration with visual node editor. Connect 400+ apps, Cron scheduling, data transformation, error handling.
