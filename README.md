@@ -43,6 +43,22 @@ Iterative Python via live Jupyter kernel (hamelnb). Interactive REPL with inline
 **Token cost**: ~3K tokens (add) + 2K tokens (update README)
 
 **Last updated**: 2026-06-26
+### email-automation
+
+智能邮件营销自动化平台 — 批量邮件发送、Drip Campaign、A/B 测试、20+ 指标追踪，OpenClaw 生态最强邮件工具。
+
+**Use cases**: 新用户欢迎序列、活动邀请跟进、购物车挽回、生日营销、客户关系维护
+
+**Pros**: 成本极低（免费）、效率极高（95%自动化）、转化率高（精准营销）、易用性高（自然语言控制）
+
+**Cons**: HTML 模板需一定技术基础
+
+**Quick start**: "发送批量营销邮件到 1000 收件人，使用模板 welcome.html，个性化替换 {name} 变量"
+
+**Difficulty**: easy
+**Token cost**: ~3K tokens (add) + 2K tokens (update README)
+**Last updated**: 2026-06-26
+
 ### ascii-art
 
 ASCII art generator using pyfiglet, cowsay, boxes, and image-to-ascii. Generate banners, character art, boxed text, and image-to-ASCII conversion.
