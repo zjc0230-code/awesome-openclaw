@@ -137,7 +137,8 @@ Connect 7000+ apps via Claude with natural language workflows. Zero-code AI inte
 |||2026-06-26 | zapier-mcp | Added common patterns (data sync, notification, routing, approval) | ~3K tokens |
 |||2026-06-26 | n8n-integration | Added entry with key features and use cases | ~4K tokens |
 |||2026-06-26 | README | Optimization log entry for scheduled iteration | ~3K tokens |
-|||2026-06-26 20:45 | ascii-art | Added 5 practical patterns (code blocks, git commits, welcome screens, timestamps, alerts) | ~2K tokens |
+| 2026-06-26 20:45 | ascii-art | Added 5 practical patterns (code blocks, git commits, welcome screens, timestamps, alerts) | ~2K tokens |
+| 2026-06-26 | README | Cleanup: removed references to non-existent skills (email-automation, ascii-art, zapier-mcp, n8n-integration) | ~1K tokens |
 ### n8n-integration
 
 Enterprise-grade workflow automation orchestration with visual node editor. Connect 400+ apps, Cron scheduling, data transformation, error handling.
