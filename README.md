@@ -153,19 +153,6 @@ Connect 7000+ apps via Claude with natural language workflows. Zero-code AI inte
 | 2026-06-26 | README | Add social-media-automator to Skills section | ~4K tokens |
 | 2026-06-26 | README | Cleanup: removed references to non-existent skills (email-automation, ascii-art, zapier-mcp, n8n-integration) | ~1K tokens |
 | 2026-06-27 | n8n-integration | Update README last updated date | ~1K tokens |
-### n8n-integration
-
-Enterprise-grade workflow automation orchestration with visual node editor. Connect 400+ apps, Cron scheduling, data transformation, error handling.
-
-**Use cases**: Complex automation, API orchestration, data pipelines, team workflows
-**Pros**: Visual editor, 300+ nodes, version control, team collaboration
-**Cons**: Requires Node.js 18+, learning curve for advanced features
-
-**Quick start**: Create workflow with webhook trigger → data transformation → database write
-
-**Difficulty**: medium
-**Token cost**: ~4K tokens (add) + 2K tokens (update README)
-**Last updated**: 2026-06-27
-
+---
 ---
 
