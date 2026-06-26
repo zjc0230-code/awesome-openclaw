@@ -126,6 +126,18 @@ Connect 7000+ apps via Claude with natural language workflows. Zero-code AI inte
 
 **Last updated**: 2026-06-26
 
+### social-media-automator
+
+统一API驱动的社交媒体自动化平台，集成13+主流平台（Twitter/X、Instagram、Facebook、LinkedIn、TikTok等）。支持批量发布、AI内容生成、智能调度、数据分析。
+
+**Use cases**: 跨平台内容调度、批量发布、AI辅助生成、数据分析
+**Pros**: 统一API、13+平台、AI驱动、效率提升70%、ROI高达1:7.5
+**Cons**: 需技术背景
+
+**Difficulty**: medium
+**Token cost**: ~4K tokens (add) + 2K tokens (update README)
+**Last updated**: 2026-06-26
+
 ---
 
 ## Optimization Log
@@ -138,6 +150,7 @@ Connect 7000+ apps via Claude with natural language workflows. Zero-code AI inte
 |||2026-06-26 | n8n-integration | Added entry with key features and use cases | ~4K tokens |
 |||2026-06-26 | README | Optimization log entry for scheduled iteration | ~3K tokens |
 | 2026-06-26 20:45 | ascii-art | Added 5 practical patterns (code blocks, git commits, welcome screens, timestamps, alerts) | ~2K tokens |
+| 2026-06-26 | README | Add social-media-automator to Skills section | ~4K tokens |
 | 2026-06-26 | README | Cleanup: removed references to non-existent skills (email-automation, ascii-art, zapier-mcp, n8n-integration) | ~1K tokens |
 ### n8n-integration
 
