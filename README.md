@@ -45,13 +45,13 @@ Iterative Python via live Jupyter kernel (hamelnb). Interactive REPL with inline
 **Token cost**: ~3K tokens (add) + 1.5K tokens (update README)
 
 **Last updated**: 2026-06-26
+**Last updated**: 2026-06-26
 **Difficulty**: easy
 
 ---
 
 ## Optimization Log
 
-|| Date | Skill | Change | Token Cost |
-|------|-------|--------|------------|
+||| Date | Skill | Change | Token Cost |
+||------|-------|--------|------------|
 | 2026-06-26 | jupyter-live-kernel | Added Performance Tips, IDE integration, alternatives comparison | ~4K tokens |
-| 2026-06-26 | jupyter-live-kernel | Enhanced with practical tips and integration guides | ~1.5K tokens |
