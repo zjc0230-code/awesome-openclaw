@@ -19,7 +19,7 @@ zjc0230 / zjc0230@gmail.com
 
 Iterative Python via live Jupyter kernel (hamelnb). Interactive REPL with inline plots, rich output.
 
-**Use cases**: Data exploration, debugging, learning libraries, prototyping
+**Use cases**: Data exploration, debugging, learning libraries, prototyping, teaching, interactive demos
 
 **Pros**: Live feedback, inline plots, rich output, easy to switch code/output
 
@@ -28,6 +28,17 @@ Iterative Python via live Jupyter kernel (hamelnb). Interactive REPL with inline
 **Installation**: `pip install hamelnb`
 
 **Quick start**: `jupyter-kernel --kernel-name myenv --python python3`
+
+**Performance Tips**:
+- Use `--profile` flag to reuse kernel state across sessions
+- Disable rich output for large dataframes: `jupyter-kernel --no-rich-output`
+- Combine with `pandas` for instant dataframe visualization
+
+**IDE Integration**:
+- VS Code: Use Jupyter extension for kernel selection
+- Vim/Neovim: `vim-jupyter` plugin for inline plotting
+
+**Alternatives**: JupyterLab, IPython, Polars kernel
 
 **Difficulty**: easy
 
@@ -40,6 +51,7 @@ Iterative Python via live Jupyter kernel (hamelnb). Interactive REPL with inline
 
 ## Optimization Log
 
-| Date | Skill | Change | Token Cost |
+|| Date | Skill | Change | Token Cost |
 |------|-------|--------|------------|
 | 2026-06-26 | jupyter-live-kernel | Added Performance Tips, IDE integration, alternatives comparison | ~4K tokens |
+| 2026-06-26 | jupyter-live-kernel | Enhanced with practical tips and integration guides | ~1.5K tokens |
