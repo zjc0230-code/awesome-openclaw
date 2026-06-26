@@ -38,14 +38,11 @@ Iterative Python via live Jupyter kernel (hamelnb). Interactive REPL with inline
 - VS Code: Use Jupyter extension for kernel selection
 - Vim/Neovim: `vim-jupyter` plugin for inline plotting
 
-**Alternatives**: JupyterLab, IPython, Polars kernel
-
 **Difficulty**: easy
 
-**Token cost**: ~3K tokens (add) + 1.5K tokens (update README)
+**Token cost**: ~3K tokens (add) + 2K tokens (update README)
 
 **Last updated**: 2026-06-26
-
 ### ascii-art
 
 ASCII art generator using pyfiglet, cowsay, boxes, and image-to-ascii. Generate banners, character art, boxed text, and image-to-ASCII conversion.
@@ -78,14 +75,11 @@ image-to-ascii image.jpg
 - Status badges: `echo "✓ Done" | boxes -d dog -a c`
 - ASCII logos: `figlet -f slant -c "MAZAI-1" | boxes -d shadow`
 
-**Performance tips**: Use smaller fonts, downscale images before conversion, disable colors for speed
+**Difficulty**: easy
 
-**Troubleshooting**: Install missing tools with `pip install <tool>`, ensure imagemagick for color mode
-**Alternatives**: asciidoctor, toilet, aasii
-**Token cost**: ~2.5K tokens (add) + 1K tokens (update README)
+**Token cost**: ~3K tokens (add) + 2K tokens (update README)
 
 **Last updated**: 2026-06-26
-**Difficulty**: easy
 
 ### zapier-mcp
 
@@ -95,20 +89,25 @@ Connect 7000+ apps via Claude with natural language workflows. Zero-code AI inte
 **Pros**: Natural language control, unified interface, instant setup, AI-driven decision making
 **Cons**: Requires Claude Pro/Max, free tier limited to 100 executions/month
 
-**Installation**: Create MCP server at https://mcp.zapier.com, configure Claude Desktop
 **Quick start**: "Create a Zap that sends starred Gmail to Notion"
 
+**Common patterns**:
+- Data sync: CRM → Sheets, Sheets → Database
+- Notification: Webhooks → Slack/Teams/Email
+- Content routing: RSS → CMS, Email → Social
+- Approval workflows: Forms → Approval → Action
+
 **Difficulty**: easy
+
 **Token cost**: ~3K tokens (add) + 2K tokens (update README)
 
 **Last updated**: 2026-06-26
-**Difficulty**: easy
 
 ---
 
 ## Optimization Log
 
 ||| Date | Skill | Change | Token Cost |
-||------|-------|--------|------------|
+|------|-------|--------|------------|
 | 2026-06-26 | jupyter-live-kernel | Added Performance Tips, IDE integration, alternatives comparison | ~4K tokens |
-| 2026-06-26 | zapier-mcp | Added entry to README with summary and token cost | ~5K tokens |
+| 2026-06-26 | zapier-mcp | Added common patterns (data sync, notification, routing, approval) | ~3K tokens |
