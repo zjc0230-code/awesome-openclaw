@@ -45,6 +45,50 @@ Iterative Python via live Jupyter kernel (hamelnb). Interactive REPL with inline
 **Token cost**: ~3K tokens (add) + 1.5K tokens (update README)
 
 **Last updated**: 2026-06-26
+
+### ascii-art
+
+ASCII art generator using pyfiglet, cowsay, boxes, and image-to-ascii. Generate banners, character art, boxed text, and image-to-ASCII conversion.
+
+**Use cases**: Terminal headers, status badges, ASCII logos, image-to-text conversion, creative output
+
+**Pros**: Multiple tools in one, easy CLI, supports colors and fonts, image conversion
+
+**Cons**: Requires Python libraries, large ASCII art can be slow
+
+**Installation**: `pip install pyfiglet cowsay boxes image-to-ascii`
+
+**Quick start**:
+```bash
+# Text banner
+figlet "Hello World"
+
+# Character art
+cowsay "Hermes Agent"
+
+# Boxed text
+echo "Content" | boxes -d bubble
+
+# Image to ASCII
+image-to-ascii image.jpg
+```
+
+**Common patterns**:
+- Terminal headers: `figlet -f banner -c "PROJECT" | boxes -d bubble`
+- Status badges: `echo "✓ Done" | boxes -d dog -a c`
+- ASCII logos: `figlet -f slant -c "MAZAI-1" | boxes -d shadow`
+
+**Performance tips**: Use smaller fonts, downscale images before conversion, disable colors for speed
+
+**Troubleshooting**: Install missing tools with `pip install <tool>`, ensure imagemagick for color mode
+
+**Alternatives**: asciidoctor, toilet, aasii
+
+**Difficulty**: easy
+
+**Token cost**: ~2.5K tokens (add) + 1K tokens (update README)
+
+**Last updated**: 2026-06-26
 **Difficulty**: easy
 
 ---

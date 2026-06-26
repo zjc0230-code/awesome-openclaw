@@ -1,0 +1,204 @@
+---
+name: ascii-art
+description: "ASCII art: pyfiglet, cowsay, boxes, image-to-ascii"
+version: 1.0.0
+author: Hermes Agent
+license: MIT
+platforms: [linux, macos, windows]
+metadata:
+  hermes:
+    tags: [ASCII, Art, Text, Visual, Creative]
+    related_skills: [creative, baoyu-article-illustrator, baoyu-infographic]
+---
+
+# ASCII Art Generator
+
+Generate beautiful ASCII art from text using multiple libraries: pyfiglet, cowsay, boxes, and image-to-ascii conversion.
+
+## Features
+
+- **Text-to-ASCII** with pyfiglet (large fonts, banner-style)
+- **Character art** with cowsay (speech bubbles, ASCII characters)
+- **Boxed text** with boxes library (borders, shadows, colors)
+- **Image-to-ASCII** conversion (convert images to text art)
+- **Multiple font styles** (banner, slant, shadow, etc.)
+- **Color support** (ANSI colors for terminal display)
+
+## Installation
+
+```bash
+# Install all ASCII art tools at once
+pip install pyfiglet cowsay boxes image-to-ascii
+```
+
+## Usage
+
+### 1. Text-to-ASCII (pyfiglet)
+
+```bash
+# Basic banner
+figlet "Hello World"
+
+# Large font
+figlet -f big "HELLO"
+
+# Multiple fonts
+figlet -f banner -f slant -f shadow "MAGIC"
+
+# Save to file
+figlet "Awesome" > ascii.txt
+```
+
+### 2. Character Art (cowsay)
+
+```bash
+# Default cow
+cowsay "Hello, Hermes!"
+
+# Custom cow
+cowsay -f dragon "AI Agent"
+cowsay -f skeleton "Code Review"
+cowsay -f tux "Linux Server"
+
+# Twisted speech
+cowsay -t "Surprise!"
+
+# Eyes and tongue
+cowsay -e oo -T U "Excited!"
+
+# Save to file
+cowsay "Save this" > cowsay.txt
+```
+
+### 3. Boxed Text (boxes)
+
+```bash
+# Simple box
+echo "Hello World" | boxes -d cat
+
+# Fancy box
+echo "Hermes Agent" | boxes -d dog | boxes -a c
+
+# Custom dimensions
+echo "Banner" | boxes -d bubble -s 50x10
+
+# Colored box
+echo "Color" | boxes -d shadow | boxes -c cyan
+
+# Save to file
+echo "Content" | boxes -d bubble > boxed.txt
+```
+
+### 4. Image-to-ASCII (image-to-ascii)
+
+```bash
+# Convert image to ASCII
+image-to-ascii image.jpg
+
+# Custom font size
+image-to-ascii --font-size 20 image.png
+
+# Color mode (requires imagemagick)
+image-to-ascii --color image.jpg
+
+# Thresholding (grayscale only)
+image-to-ascii --threshold 128 image.png
+
+# Save to file
+image-to-ascii image.jpg > ascii_art.txt
+
+# High resolution
+image-to-ascii --font-size 30 --width 200 image.png > hi-res.txt
+```
+
+## Common Patterns
+
+### Terminal Header
+
+```bash
+# Create a stylish header
+figlet -f banner -c "PROJECT" | boxes -d bubble -a c -s 80x15
+```
+
+### Status Badges
+
+```bash
+# Success badge
+echo "✓ Done" | boxes -d dog -a c -s 40x8
+
+# Warning badge
+echo "⚠ Check" | boxes -d skeleton -a c -s 40x8
+
+# Error badge
+echo "✗ Fail" | boxes -d tux -a c -s 40x8
+```
+
+### ASCII Logos
+
+```bash
+# Project logo
+figlet -f slant -c "MAZAI-1" | boxes -d shadow -a c -s 60x12
+```
+
+### ASCII Art Integration
+
+```bash
+# Combine tools
+figlet "TASK" | cowsay -f dragon > combined.txt
+
+# Boxes + ASCII
+echo "Ready!" | boxes -d bubble > header.txt
+```
+
+## Performance Tips
+
+- **Font size**: Larger fonts = more characters = slower rendering
+- **Image resolution**: Downscale images before conversion for better performance
+- **Color mode**: Disable color for terminal speed (`--no-color` or avoid imagemagick)
+- **Batch processing**: Pipe multiple lines through boxes for log formatting
+
+### Command-line Examples
+
+```bash
+# Multiple lines through boxes
+echo -e "Step 1\nStep 2\nStep 3" | boxes -d bubble
+
+# Loop through files
+for file in *.jpg; do
+  image-to-ascii --font-size 15 "$file" > "ascii_$file.txt"
+done
+
+# Create a poster
+figlet -f banner -c "HERMES AGENT" | boxes -d bubble -a c -s 80x20
+```
+
+## Troubleshooting
+
+| Problem | Solution |
+|---------|----------|
+| `figlet: command not found` | Install pyfiglet: `pip install pyfiglet` |
+| `cowsay: command not found` | Install cowsay: `pip install cowsay` |
+| `boxes: command not found` | Install boxes: `pip install boxes` |
+| `image-to-ascii: command not found` | Install image-to-ascii: `pip install image-to-ascii` |
+| `imagemagick not found` | Install imagemagick for color mode: `apt install imagemagick` (Linux) |
+| No colors in terminal | Enable ANSI colors: `export TERM=xterm-256color` |
+| Fonts not available | Check pyfiglet fonts: `figlet -f list` |
+
+## Alternatives
+
+- **asciidoctor**: Document generation with ASCII art
+- **asciinema**: Terminal recording with ASCII art overlay
+- **aasii**: Lightweight ASCII art generator
+- **cowsay alternative**: `toilet` (figlet-based with colors)
+
+## Difficulty
+
+easy
+
+## Token cost
+
+~2.5K tokens (add) + 1K tokens (update README)
+
+## Last updated
+
+2026-06-26
