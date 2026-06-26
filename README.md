@@ -81,11 +81,7 @@ image-to-ascii image.jpg
 **Performance tips**: Use smaller fonts, downscale images before conversion, disable colors for speed
 
 **Troubleshooting**: Install missing tools with `pip install <tool>`, ensure imagemagick for color mode
-
 **Alternatives**: asciidoctor, toilet, aasii
-
-**Alternatives**: asciidoctor, toilet, aasii
-**Difficulty**: easy
 **Token cost**: ~2.5K tokens (add) + 1K tokens (update README)
 
 **Last updated**: 2026-06-26
