@@ -111,3 +111,20 @@ Connect 7000+ apps via Claude with natural language workflows. Zero-code AI inte
 |------|-------|--------|------------|
 | 2026-06-26 | jupyter-live-kernel | Added Performance Tips, IDE integration, alternatives comparison | ~4K tokens |
 | 2026-06-26 | zapier-mcp | Added common patterns (data sync, notification, routing, approval) | ~3K tokens |
+| 2026-06-26 | n8n-integration | Added entry with key features and use cases | ~4K tokens |
+### n8n-integration
+
+Enterprise-grade workflow automation orchestration with visual node editor. Connect 400+ apps, Cron scheduling, data transformation, error handling.
+
+**Use cases**: Complex automation, API orchestration, data pipelines, team workflows
+**Pros**: Visual editor, 300+ nodes, version control, team collaboration
+**Cons**: Requires Node.js 18+, learning curve for advanced features
+
+**Quick start**: Create workflow with webhook trigger → data transformation → database write
+
+**Difficulty**: medium
+**Token cost**: ~4K tokens (add) + 2K tokens (update README)
+**Last updated**: 2026-06-26
+
+---
+
