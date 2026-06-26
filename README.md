@@ -2,6 +2,10 @@
 
 AI 技能精选库 — 收录 Hermes/Cursor 高价值 Skills，工具类、营销类优先，持续迭代优化。
 
+### 优化统计
+- **优化次数**: 3
+- **最近更新**: 2026-06-27 05:46
+
 ### Contributing
 - 内容真实，禁止密钥入库
 - 必须使用 commit + push 格式
@@ -44,7 +48,7 @@ Iterative Python via live Jupyter kernel (hamelnb). Interactive REPL with inline
 
 **Token cost**: ~1K tokens (update) + 2K tokens (README log)
 
-**Last updated**: 2026-06-27 16:30
+**Last updated**: 2026-06-27 05:46
 
 ---
 
@@ -70,7 +74,7 @@ Automate posting to multiple social platforms (Twitter/X, LinkedIn, Reddit) usin
 
 **Token cost**: ~1K tokens (README log)
 
-**Last updated**: 2026-06-27 16:30
+**Last updated**: 2026-06-27 05:46
 
 ---
 
@@ -78,7 +82,7 @@ Automate posting to multiple social platforms (Twitter/X, LinkedIn, Reddit) usin
 
 |||||||| Date | Skill | Change | Token Cost |
 ||||------|-------|--------|------------|
-||2026-06-27 16:30 | README | Cleanup stale entries, add social-media-automator | ~1K tokens |
+||2026-06-27 05:46 | README | Cleanup stale entries, add social-media-automator | ~1K tokens |
 ||2026-06-26 15:00 | jupyter-live-kernel | Performance tips, IDE integration, alternatives comparison | ~4K tokens |
 ||2026-06-26 | jupyter-live-kernel | Add profile caching, import caching, updated token cost | ~1K tokens |
 
