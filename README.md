@@ -44,19 +44,41 @@ Iterative Python via live Jupyter kernel (hamelnb). Interactive REPL with inline
 
 **Token cost**: ~1K tokens (update) + 2K tokens (README log)
 
-**Last updated**: 2026-06-26 15:00
+**Last updated**: 2026-06-27 16:30
+
+---
+
+### social-media-automator
+
+Automate posting to multiple social platforms (Twitter/X, LinkedIn, Reddit) using curl + scheduled scripts.
+
+**Use cases**: Scheduled content posting, cross-platform automation, draft preview before publish
+
+**Pros**: No API keys needed (uses official endpoints), cron-compatible, multi-platform support
+
+**Cons**: Requires manual token setup per platform, less feature-rich than official APIs
+
+**Installation**: Create `~/.local/bin/social-media/` and add scripts
+
+**Quick start**: `~/.local/bin/social-media/post-twitter.sh "Your message"`
+
+**Scheduling**: Add to crontab: `0 9 * * * ~/.local/bin/social-media/post-twitter.sh "Daily update"`
+
+**Security**: Store tokens in `~/.config/social-media.env`, never commit scripts with tokens
+
+**Difficulty**: easy
+
+**Token cost**: ~1K tokens (README log)
+
+**Last updated**: 2026-06-27 16:30
 
 ---
 
 ## Optimization Log
 
-||||||| Date | Skill | Change | Token Cost |
-|||------|-------|--------|------------|
-|2026-06-26 15:00 | jupyter-live-kernel | Performance tips, IDE integration, alternatives comparison | ~4K tokens |
-|2026-06-26 | jupyter-live-kernel | Add profile caching, import caching, updated token cost | ~1K tokens |
-|2026-06-26 | n8n-integration | Added entry with key features and use cases | ~4K tokens |
-|2026-06-26 | README | Optimization log entry for scheduled iteration | ~3K tokens |
-| 2026-06-26 20:45 | ascii-art | Added 5 practical patterns (code blocks, git commits, welcome screens, timestamps, alerts) | ~2K tokens |
-|2026-06-26 | README | Cleanup: removed references to non-existent skills (email-automation, ascii-art, zapier-mcp, n8n-integration) | ~1K tokens |
-| 2026-06-27 | README | Remove remaining non-existent skill references (email-automation, zapier-mcp, social-media-automator) | ~2K tokens |
+|||||||| Date | Skill | Change | Token Cost |
+||||------|-------|--------|------------|
+||2026-06-27 16:30 | README | Cleanup stale entries, add social-media-automator | ~1K tokens |
+||2026-06-26 15:00 | jupyter-live-kernel | Performance tips, IDE integration, alternatives comparison | ~4K tokens |
+||2026-06-26 | jupyter-live-kernel | Add profile caching, import caching, updated token cost | ~1K tokens |
 
