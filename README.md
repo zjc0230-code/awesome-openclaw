@@ -3,7 +3,7 @@
 AI 技能精选库 — 收录 Hermes/Cursor 高价值 Skills，工具类、营销类优先，持续迭代优化。
 
 ### 优化统计
-- **优化次数**: 41
+- **优化次数**: 42
 - **最近更新**: 2026-06-27 18:30
 
 ### Contributing
@@ -27,11 +27,13 @@ Zero-code skill generator for creating custom Skills via natural language, GitHu
 
 **Pros**: No coding required, 50+ templates, visual workflow editor, enterprise features
 
+**Cons**: Limited customization compared to manual creation, template dependency
+
 **Installation**: `clawhub install skill-creator` or `git clone https://github.com/openclaw/skill-creator.git`
 
 **Difficulty**: easy
 
-**Token cost**: ~1K tokens (README log)
+**Token cost**: ~1.5K tokens (README log + 500 tokens for iteration)
 
 **Last updated**: 2026-06-27 11:15
 
