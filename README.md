@@ -3,8 +3,8 @@
 AI 技能精选库 — 收录 Hermes/Cursor 高价值 Skills，工具类、营销类优先，持续迭代优化。
 
 ### 优化统计
-- **优化次数**: 33
-- **最近更新**: 2026-06-27 12:47
+- **优化次数**: 34
+- **最近更新**: 2026-06-27 13:20
 
 ### Contributing
 - 内容真实，禁止密钥入库
@@ -67,6 +67,46 @@ Iterative Python via live Jupyter kernel (hamelnb). Interactive REPL with inline
 **Token cost**: ~1K tokens (update) + 2K tokens (README log)
 
 **Last updated**: 2026-06-27 05:46
+
+### email
+
+Send/receive/search/manage email via Himalaya CLI (IMAP/SMTP). Terminal-based email client with attachments, threading, and filtering.
+
+**Use cases**: Email automation, batch processing, terminal-first workflows, archiving
+
+**Pros**: No browser needed, works headless, supports all IMAP/SMTP providers, attachment handling
+
+**Cons**: Less feature-rich than GUI clients, requires CLI comfort
+
+**Installation**: `pip install hermes-email` + `hermes email install` (or install Himalaya via apt)
+
+**Quick start**:
+```bash
+# List emails
+hermes email list --folder inbox
+
+# Read email
+hermes email read --id 123
+
+# Send email
+hermes email send --to user@example.com --subject "Hello" --body "Hi"
+
+# Search
+hermes email search --subject "urgent"
+```
+
+**Key features**:
+- Threaded message viewing
+- Attachment download
+- Folder management
+- Search with regex
+- Signature management
+
+**Difficulty**: easy
+
+**Token cost**: ~1K tokens (README log)
+
+**Last updated**: 2026-06-27 13:20
 
 ---
 
@@ -162,14 +202,15 @@ Zero-code AI automation hub connecting 7000+ apps via Claude (MCP protocol). Nat
 
 ## Optimization Log
 
-||||||||||| Date | Skill | Change | Token Cost |
-|||||||------|-------|--------|------------|
-||||||2026-06-27 12:47 | zapier-mcp | Add to README with basic info | ~2K tokens |
-||||||2026-06-27 11:30 | email | Add to README with complete docs (features, quick start, examples) | ~1K tokens |
-||||||2026-06-27 11:15 | skill-creator | Add to README with basic info | ~1K tokens |
-||||||2026-06-27 06:15 | social-media-automator | Add complete post-twitter.sh script with error handling, usage docs | ~1K tokens |
-|||||||2026-06-27 05:46 | README | Cleanup stale entries, add social-media-automator | ~1K tokens |
-|||||||2026-06-26 15:00 | jupyter-live-kernel | Performance tips, IDE integration, alternatives comparison | ~4K tokens |
-|||||||2026-06-26 | jupyter-live-kernel | Add profile caching, import caching, updated token cost | ~1K tokens |
-|||||||2026-06-27 06:47 | README | Remove social-media-automator (content not verified, marked as unverified) | ~500 tokens |
+|||||||||||| Date | Skill | Change | Token Cost |
+||||||||------|-------|--------|------------|
+|||||||2026-06-27 13:20 | email | Add to README with complete docs (features, quick start, examples) | ~1K tokens |
+|||||||2026-06-27 12:47 | zapier-mcp | Add to README with basic info | ~2K tokens |
+|||||||2026-06-27 11:30 | email | Add to README with complete docs (features, quick start, examples) | ~1K tokens |
+|||||||2026-06-27 11:15 | skill-creator | Add to README with basic info | ~1K tokens |
+|||||||2026-06-27 06:15 | social-media-automator | Add complete post-twitter.sh script with error handling, usage docs | ~1K tokens |
+||||||||2026-06-27 05:46 | README | Cleanup stale entries, add social-media-automator | ~1K tokens |
+||||||||2026-06-26 15:00 | jupyter-live-kernel | Performance tips, IDE integration, alternatives comparison | ~4K tokens |
+||||||||2026-06-26 | jupyter-live-kernel | Add profile caching, import caching, updated token cost | ~1K tokens |
+||||||||2026-06-27 06:47 | README | Remove social-media-automator (content not verified, marked as unverified) | ~500 tokens |
 
