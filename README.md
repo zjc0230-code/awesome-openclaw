@@ -3,8 +3,8 @@
 AI 技能精选库 — 收录 Hermes/Cursor 高价值 Skills，工具类、营销类优先，持续迭代优化。
 
 ### 优化统计
-- **优化次数**: 29
-- **最近更新**: 2026-06-27 06:47
+- **优化次数**: 30
+- **最近更新**: 2026-06-27 11:15
 
 ### Contributing
 - 内容真实，禁止密钥入库
@@ -18,6 +18,24 @@ zjc0230 / zjc0230@gmail.com
 ---
 
 ## Skills
+
+### skill-creator
+
+Zero-code skill generator for creating custom Skills via natural language, GitHub URL conversion, and visual editor. Supports templates, CI/CD integration, and team collaboration.
+
+**Use cases**: Non-developers creating skills, rapid prototyping, team skill development
+
+**Pros**: No coding required, 50+ templates, visual workflow editor, enterprise features
+
+**Installation**: `clawhub install skill-creator` or `git clone https://github.com/openclaw/skill-creator.git`
+
+**Difficulty**: easy
+
+**Token cost**: ~1K tokens (README log)
+
+**Last updated**: 2026-06-27 11:15
+
+---
 
 ### jupyter-live-kernel
 
@@ -80,9 +98,10 @@ Automate posting to multiple social platforms (Twitter/X, LinkedIn, Reddit) usin
 
 ## Optimization Log
 
-||||||||| Date | Skill | Change | Token Cost |
-|||||------|-------|--------|------------|
-||||2026-06-27 06:15 | social-media-automator | Add complete post-twitter.sh script with error handling, usage docs | ~1K tokens |
+|||||||||| Date | Skill | Change | Token Cost |
+||||||------|-------|--------|------------|
+|||||2026-06-27 11:15 | skill-creator | Add to README with basic info | ~1K tokens |
+|||||2026-06-27 06:15 | social-media-automator | Add complete post-twitter.sh script with error handling, usage docs | ~1K tokens |
 ||||||2026-06-27 05:46 | README | Cleanup stale entries, add social-media-automator | ~1K tokens |
 ||||||2026-06-26 15:00 | jupyter-live-kernel | Performance tips, IDE integration, alternatives comparison | ~4K tokens |
 ||||||2026-06-26 | jupyter-live-kernel | Add profile caching, import caching, updated token cost | ~1K tokens |
