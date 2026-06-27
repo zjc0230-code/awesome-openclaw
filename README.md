@@ -3,8 +3,8 @@
 AI 技能精选库 — 收录 Hermes/Cursor 高价值 Skills，工具类、营销类优先，持续迭代优化。
 
 ### 优化统计
-- **优化次数**: 32
-- **最近更新**: 2026-06-27 12:17
+- **优化次数**: 33
+- **最近更新**: 2026-06-27 12:47
 
 ### Contributing
 - 内容真实，禁止密钥入库
@@ -136,17 +136,40 @@ Automate posting to multiple social platforms (Twitter/X, LinkedIn, Reddit) usin
 
 **Last updated**: 2026-06-27 05:46
 
+### zapier-mcp
+
+Zero-code AI automation hub connecting 7000+ apps via Claude (MCP protocol). Natural language workflow creation.
+
+**Use cases**: Cross-app automation, AI workflows, business process optimization, data synchronization
+
+**Pros**: No coding required, 7000+ integrations, AI-powered field mapping, enterprise-grade security
+
+**Cons**: Requires Claude Pro/Max, free tier limited to 100 executions/month
+
+**Installation**: Configure MCP server at https://mcp.zapier.com, add to Claude Desktop config
+
+**Quick start**: In Claude, describe automation in natural language (e.g., "email star → notion todo")
+
+**Features**: 20+ MCP tools (list actions, execute, search, create zaps), error handling, execution history
+
+**Difficulty**: easy
+
+**Token cost**: ~2K tokens (README log)
+
+**Last updated**: 2026-06-27 12:47
+
 ---
 
 ## Optimization Log
 
-|||||||||| Date | Skill | Change | Token Cost |
-||||||------|-------|--------|------------|
-|||||2026-06-27 11:30 | email | Add to README with complete docs (features, quick start, examples) | ~1K tokens |
-|||||2026-06-27 11:15 | skill-creator | Add to README with basic info | ~1K tokens |
-|||||2026-06-27 06:15 | social-media-automator | Add complete post-twitter.sh script with error handling, usage docs | ~1K tokens |
-||||||2026-06-27 05:46 | README | Cleanup stale entries, add social-media-automator | ~1K tokens |
-||||||2026-06-26 15:00 | jupyter-live-kernel | Performance tips, IDE integration, alternatives comparison | ~4K tokens |
-||||||2026-06-26 | jupyter-live-kernel | Add profile caching, import caching, updated token cost | ~1K tokens |
-||||||2026-06-27 06:47 | README | Remove social-media-automator (content not verified, marked as unverified) | ~500 tokens |
+||||||||||| Date | Skill | Change | Token Cost |
+|||||||------|-------|--------|------------|
+||||||2026-06-27 12:47 | zapier-mcp | Add to README with basic info | ~2K tokens |
+||||||2026-06-27 11:30 | email | Add to README with complete docs (features, quick start, examples) | ~1K tokens |
+||||||2026-06-27 11:15 | skill-creator | Add to README with basic info | ~1K tokens |
+||||||2026-06-27 06:15 | social-media-automator | Add complete post-twitter.sh script with error handling, usage docs | ~1K tokens |
+|||||||2026-06-27 05:46 | README | Cleanup stale entries, add social-media-automator | ~1K tokens |
+|||||||2026-06-26 15:00 | jupyter-live-kernel | Performance tips, IDE integration, alternatives comparison | ~4K tokens |
+|||||||2026-06-26 | jupyter-live-kernel | Add profile caching, import caching, updated token cost | ~1K tokens |
+|||||||2026-06-27 06:47 | README | Remove social-media-automator (content not verified, marked as unverified) | ~500 tokens |
 
