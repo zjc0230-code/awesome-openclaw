@@ -3,8 +3,8 @@
 AI 技能精选库 — 收录 Hermes/Cursor 高价值 Skills，工具类、营销类优先，持续迭代优化。
 
 ### 优化统计
-- **优化次数**: 30
-- **最近更新**: 2026-06-27 11:15
+- **优化次数**: 31
+- **最近更新**: 2026-06-27 11:30
 
 ### Contributing
 - 内容真实，禁止密钥入库
@@ -70,6 +70,48 @@ Iterative Python via live Jupyter kernel (hamelnb). Interactive REPL with inline
 
 ---
 
+### email
+
+Send/receive/search/manage email via Himalaya CLI (IMAP/SMTP). Terminal-based email client with attachments, threading, and filtering.
+
+**Use cases**: Email automation, batch processing, terminal-first workflows, archiving
+
+**Pros**: No browser needed, works headless, supports all IMAP/SMTP providers, attachment handling
+
+**Cons**: Less feature-rich than GUI clients, requires CLI comfort
+
+**Installation**: `pip install hermes-email` + `hermes email install` (or install Himalaya via apt)
+
+**Quick start**:
+```bash
+# List emails
+hermes email list --folder inbox
+
+# Read email
+hermes email read --id 123
+
+# Send email
+hermes email send --to user@example.com --subject "Hello" --body "Hi"
+
+# Search
+hermes email search --subject "urgent"
+```
+
+**Key features**:
+- Threaded message viewing
+- Attachment download
+- Folder management
+- Search with regex
+- Signature management
+
+**Difficulty**: easy
+
+**Token cost**: ~1K tokens (README log)
+
+**Last updated**: 2026-06-27 05:46
+
+---
+
 ### social-media-automator
 
 Automate posting to multiple social platforms (Twitter/X, LinkedIn, Reddit) using curl + scheduled scripts.
@@ -100,6 +142,7 @@ Automate posting to multiple social platforms (Twitter/X, LinkedIn, Reddit) usin
 
 |||||||||| Date | Skill | Change | Token Cost |
 ||||||------|-------|--------|------------|
+|||||2026-06-27 11:30 | email | Add to README with complete docs (features, quick start, examples) | ~1K tokens |
 |||||2026-06-27 11:15 | skill-creator | Add to README with basic info | ~1K tokens |
 |||||2026-06-27 06:15 | social-media-automator | Add complete post-twitter.sh script with error handling, usage docs | ~1K tokens |
 ||||||2026-06-27 05:46 | README | Cleanup stale entries, add social-media-automator | ~1K tokens |
