@@ -106,75 +106,9 @@ hermes email search --subject "urgent"
 
 **Token cost**: ~1K tokens (README log)
 
-**Last updated**: 2026-06-27 13:20
-
----
-
-### email
-
-Send/receive/search/manage email via Himalaya CLI (IMAP/SMTP). Terminal-based email client with attachments, threading, and filtering.
-
-**Use cases**: Email automation, batch processing, terminal-first workflows, archiving
-
-**Pros**: No browser needed, works headless, supports all IMAP/SMTP providers, attachment handling
-
-**Cons**: Less feature-rich than GUI clients, requires CLI comfort
-
-**Installation**: `pip install hermes-email` + `hermes email install` (or install Himalaya via apt)
-
-**Quick start**:
-```bash
-# List emails
-hermes email list --folder inbox
-
-# Read email
-hermes email read --id 123
-
-# Send email
-hermes email send --to user@example.com --subject "Hello" --body "Hi"
-
-# Search
-hermes email search --subject "urgent"
-```
-
-**Key features**:
-- Threaded message viewing
-- Attachment download
-- Folder management
-- Search with regex
-- Signature management
-
-**Difficulty**: easy
-
-**Token cost**: ~1K tokens (README log)
-
 **Last updated**: 2026-06-27 05:46
 
 ---
-
-### social-media-automator
-
-Automate posting to multiple social platforms (Twitter/X, LinkedIn, Reddit) using curl + scheduled scripts.
-
-**Use cases**: Scheduled content posting, cross-platform automation, draft preview before publish
-
-**Pros**: No API keys needed (uses official endpoints), cron-compatible, multi-platform support
-
-**Cons**: Requires manual token setup per platform, less feature-rich than official APIs
-
-**Installation**: Create `~/.local/bin/social-media/` and add scripts
-
-**Quick start**: `~/.local/bin/social-media/post-twitter.sh "Your message"`
-
-**Scheduling**: Add to crontab: `0 9 * * * ~/.local/bin/social-media/post-twitter.sh "Daily update"`
-
-**Security**: Store tokens in `~/.config/social-media.env`, never commit scripts with tokens
-
-**Difficulty**: easy
-
-**Token cost**: ~1K tokens (README log)
-
-**Last updated**: 2026-06-27 05:46
 
 ### zapier-mcp
 
@@ -213,4 +147,3 @@ Zero-code AI automation hub connecting 7000+ apps via Claude (MCP protocol). Nat
 ||||||||2026-06-26 15:00 | jupyter-live-kernel | Performance tips, IDE integration, alternatives comparison | ~4K tokens |
 ||||||||2026-06-26 | jupyter-live-kernel | Add profile caching, import caching, updated token cost | ~1K tokens |
 ||||||||2026-06-27 06:47 | README | Remove social-media-automator (content not verified, marked as unverified) | ~500 tokens |
-
