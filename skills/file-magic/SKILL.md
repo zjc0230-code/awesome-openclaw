@@ -48,4 +48,44 @@ file --list-magic
 - Debugging unknown file extensions
 - Archive verification
 
+## Error Handling
+
+```bash
+# File not found
+$ file missing.txt
+file: missing.txt: No such file or directory
+
+# Permission denied
+$ file /root/.ssh/id_rsa
+file: /root/.ssh/id_rsa: Permission denied
+
+# Binary file detection
+$ file /bin/ls
+/bin/ls: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.32, BuildID[sha1]=...
+```
+
+**Common exit codes:**
+- `0` — success
+- `1` — general error (file not found, permission denied)
+- `2` — command-line parsing error
+
+## Advanced Usage
+
+```bash
+# Show detailed MIME type
+file --mime-type --brief filename
+
+# Show encoding
+file --mime-encoding filename
+
+# Batch process directory
+find . -type f -exec file {} \;
+
+# Quiet mode (suppress header)
+file -q filename
+
+# Parse output programmatically
+file --mime-type filename | cut -d: -f2 | tr -d ' '
+```
+
 ## Token cost: ~0.5K tokens (README log)
