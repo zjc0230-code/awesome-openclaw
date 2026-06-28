@@ -88,4 +88,6 @@ file -q filename
 file --mime-type filename | cut -d: -f2 | tr -d ' '
 ```
 
-## Token cost: ~0.5K tokens (README log)
+**Token cost**: ~0.5K tokens (README log)
+
+**Last updated**: 2026-06-28 10:30
