@@ -3,9 +3,9 @@
 AI 技能精选库 — 收录 Hermes/Cursor 高价值 Skills，工具类、营销类优先，持续迭代优化。
 
 ### 优化统计
-- **优化次数**: 68
-- **最近更新**: 2026-06-30 15:00
-- **累计 Token**: ~200.7K (68 次优化)
+- **优化次数**: 69
+- **最近更新**: 2026-06-30 15:30
+- **累计 Token**: ~201.7K (69 次优化)
 
 
 ### Contributing
@@ -45,3 +45,12 @@ GitHub authentication setup for Hermes agents using HTTPS tokens or SSH keys. Co
 **Difficulty**: easy
 **Token cost**: ~1.7K tokens (README log)
 **Last updated**: 2026-06-30 15:00
+
+### stock-tencent-analyst
+腾讯控股股票综合分析智能体 - 多维度专业投研团队，包括基本面、技术面、宏观面、行业面、舆情面分析师，提供完整知识库和实时数据支持。
+
+**Use cases**: 腾讯股票投资决策、投研报告生成、股价预测
+**Installation**: Native to Hermes (no installation needed)
+**Difficulty**: medium
+**Token cost**: ~1.5K tokens (README log)
+**Last updated**: 2026-06-30 15:30
