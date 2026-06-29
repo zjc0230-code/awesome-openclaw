@@ -3,9 +3,9 @@
 AI 技能精选库 — 收录 Hermes/Cursor 高价值 Skills，工具类、营销类优先，持续迭代优化。
 
 ### 优化统计
-- **优化次数**: 69
-- **最近更新**: 2026-06-30 15:30
-- **累计 Token**: ~201.7K (69 次优化)
+- **优化次数**: 70
+- **最近更新**: 2026-06-30 16:00
+- **累计 Token**: ~203.4K (70 次优化)
 
 
 ### Contributing
@@ -54,3 +54,12 @@ GitHub authentication setup for Hermes agents using HTTPS tokens or SSH keys. Co
 **Difficulty**: medium
 **Token cost**: ~1.5K tokens (README log)
 **Last updated**: 2026-06-30 15:30
+
+### marketing-copilot
+AI-powered marketing copy generator and optimizer for multiple platforms (WeChat, Xiaohongshu, TikTok, Instagram, etc.).
+
+**Use cases**: Social media posts, product copy, ad copy generation, style transfer, copy optimization
+**Installation**: Python 3.6+ (no external dependencies)
+**Difficulty**: easy
+**Token cost**: ~1.2K tokens (README log)
+**Last updated**: 2026-06-30 16:00
