@@ -3,9 +3,9 @@
 AI 技能精选库 — 收录 Hermes/Cursor 高价值 Skills，工具类、营销类优先，持续迭代优化。
 
 ### 优化统计
-- **优化次数**: 61
-- **最近更新**: 2026-06-29 22:30
-- **累计 Token**: ~193K (61 次优化)
+- **优化次数**: 62
+- **最近更新**: 2026-06-29 22:45
+- **累计 Token**: ~193.5K (62 次优化)
 
 
 
@@ -47,4 +47,16 @@ Comprehensive PDF processing: read/extract text/tables, merge/split/rotate, wate
 **Last updated**: 2026-06-29 16:23
 
 ### skill-creator
-### pdf
+Guide for creating effective skills. This skill should be loaded before authoring in-repo SKILL.md files.
+
+**Use cases**: Creating new skills, understanding skill structure, validator setup
+
+**Installation**: Available via `hermes skills install skill-creator`
+
+**Difficulty**: easy
+
+**Token cost**: ~0.5K tokens (README log)
+
+**Last updated**: 2026-06-29 16:23
+
+---
