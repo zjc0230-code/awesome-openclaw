@@ -17,7 +17,7 @@ zjc0230 / zjc0230@gmail.com
 
 ---
 
-## Skills
+## 📦 Skills
 
 ### web-search
 Web search integration for Hermes agents using built-in search tools and web scraping.
