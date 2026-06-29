@@ -35,4 +35,18 @@ Detect file types and content signatures using libmagic.
 
 **Last updated**: 2026-06-28 00:00
 
+### pdf
+
+Comprehensive PDF processing: read/extract text/tables, merge/split/rotate, watermark, forms, OCR.
+
+**Use cases**: Document automation, report generation, form filling, text extraction
+
+**Installation**: `pip install pypdf pdfplumber reportlab` or system tools (pdftotext, qpdf)
+
+**Difficulty**: medium
+
+**Token cost**: ~2K tokens (README log)
+
+**Last updated**: 2026-06-29 16:23
+
 ### skill-creator
