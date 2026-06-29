@@ -3,10 +3,9 @@
 AI 技能精选库 — 收录 Hermes/Cursor 高价值 Skills，工具类、营销类优先，持续迭代优化。
 
 ### 优化统计
-- **优化次数**: 62
-- **最近更新**: 2026-06-29 22:45
-- **累计 Token**: ~193.5K (62 次优化)
-
+- **优化次数**: 63
+- **最近更新**: 2026-06-30 10:00
+- **累计 Token**: ~196K (63 次优化)
 
 
 ### Contributing
@@ -20,43 +19,15 @@ zjc0230 / zjc0230@gmail.com
 
 ## Skills
 
-### file-magic
-Detect file types and content signatures using libmagic.
+### web-search
+Web search integration for Hermes agents using built-in search tools and web scraping.
 
-**Use cases**: Security scanning, automated processing pipelines, debugging unknown file extensions, archive verification
+**Use cases**: Research, content verification, data collection, real-time information retrieval
 
-**Installation**: `sudo apt-get install file` (Ubuntu/Debian) or `brew install file` (macOS)
-
-**Difficulty**: easy
-
-**Token cost**: ~0.5K tokens (README log)
-
-**Last updated**: 2026-06-28 00:00
-
-### pdf
-Comprehensive PDF processing: read/extract text/tables, merge/split/rotate, watermark, forms, OCR.
-
-**Use cases**: Document automation, report generation, form filling, text extraction
-
-**Installation**: `pip install pypdf pdfplumber reportlab` or system tools (pdftotext, qpdf)
-
-**Difficulty**: medium
-
-**Token cost**: ~2K tokens (README log)
-
-**Last updated**: 2026-06-29 16:23
-
-### skill-creator
-Guide for creating effective skills. This skill should be loaded before authoring in-repo SKILL.md files.
-
-**Use cases**: Creating new skills, understanding skill structure, validator setup
-
-**Installation**: Available via `hermes skills install skill-creator`
+**Installation**: Native to Hermes (no installation needed)
 
 **Difficulty**: easy
 
 **Token cost**: ~0.5K tokens (README log)
 
-**Last updated**: 2026-06-29 16:23
-
----
+**Last updated**: 2026-06-30 10:00
