@@ -120,3 +120,6 @@ hermes run marketing-copilot style-transfer \
 - 使用大模型生成文案
 - 根据平台规则注入结构化字段（标题、正文、标签等）
 - 支持风格迁移与多轮优化
+- 命令行参数解析：argparse + argparse-commands
+- 多平台配置：JSON 配置文件（wechat/xiaohongshu/tiktok/instagram/friendcircle/ecommerce）
+- 输出格式化：Rich 终端美化输出
