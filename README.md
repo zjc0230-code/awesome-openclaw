@@ -27,6 +27,9 @@ zjc0230 / zjc0230@gmail.com
 ### 自动化
 - **automation**: 重复性任务自动化脚本，提升工作效率
 
+### DevOps
+- **code-review-pre-commit**: Pre-commit 代码审查：安全扫描、质量门禁、自动修复
+
 ### 商业
 - **business**: 商业分析、市场调研、竞品分析工具集
 
