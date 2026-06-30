@@ -22,20 +22,12 @@ pip install -r requirements.txt
 
 ## 配置
 
-创建 `config.json`（参考示例）：
+创建 `config.json`（最小配置示例）：
 
 ```json
 {
-  "wechat": {
-    "platform": "wechat",
-    "max_length": 200,
-    "tone": "亲切活泼"
-  },
-  "xiaohongshu": {
-    "platform": "xiaohongshu",
-    "max_length": 500,
-    "tags": ["推荐", "好物"]
-  }
+  "platform": "wechat",
+  "tone": "亲切活泼"
 }
 ```
 
