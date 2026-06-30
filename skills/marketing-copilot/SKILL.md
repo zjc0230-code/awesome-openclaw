@@ -116,6 +116,25 @@ python3 generate.py ab-test --platform wechat --topic 无线降噪耳机 --count
 - `python-dotenv>=1.0.0`：环境变量管理
 - 大模型 API（Claude/GPT-4）：文案生成核心
 
+### 大模型 API 配置
+
+**OpenAI（GPT-4）**：
+```bash
+export OPENAI_API_KEY=your_api_key
+export OPENAI_MODEL=gpt-4-turbo  # 可选：gpt-4、gpt-3.5-turbo
+```
+
+**Anthropic（Claude）**：
+```bash
+export ANTHROPIC_API_KEY=your_api_key
+export ANTHROPIC_MODEL=claude-3-opus-20240229  # 可选：claude-3-sonnet、claude-3-haiku
+```
+
+**选择建议**：
+- GPT-4：更精准的文案生成，成本较高（~$0.03/1K tokens）
+- Claude Opus：创意文案更自然，成本较高（~$0.015/1K tokens）
+- Claude Haiku：快速生成，成本较低（~$0.00025/1K tokens）
+
 ## 完整使用示例
 
 ### 示例 1：小红书种草文案生成
