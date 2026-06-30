@@ -8,8 +8,14 @@ platforms: [linux, macos, windows]
 metadata:
   hermes:
     tags: [Tencent, Stock Analysis, Finance, Investment, Research]
-    related_skills: [stock-market-analysis, summarize]
+    keywords: [腾讯, 股票, 投研, 估值, 技术分析, 宏观分析, 行业分析, 舆情分析]
+    examples:
+      - "stock-tencent-analyst analyze --symbol 0700.HK"
+      - "stock-tencent-analyst report --period weekly"
+      - "stock-tencent-analyst predict --horizon next-day"
+    usage: "hermes skills install stock-tencent-analyst"
     difficulty: medium
+    related_skills: [stock-market-analysis, summarize]
 ---
 
 # Tencent Stock Analyst
