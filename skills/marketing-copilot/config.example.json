@@ -1,0 +1,6 @@
+{
+  "platform": "wechat",
+  "tone": "亲切活泼",
+  "api_provider": "anthropic",
+  "api_key": "your_api_key_here"
+}

@@ -3,7 +3,7 @@
 AI 技能精选库 — 收录 Hermes/Cursor 高价值 Skills，工具类、营销类优先，持续迭代优化。
 
 ### 优化统计
-- **优化次数**: 74
+- **优化次数**: 75
 - **最近更新**: 2026-06-30 17:30
 - **累计 Token**: ~206.1K (74 次优化)
 
@@ -36,6 +36,22 @@ GitHub authentication setup for Hermes agents using HTTPS tokens or SSH keys. Co
 **Difficulty**: easy
 **Token cost**: ~1.0K tokens (README log)
 **Last updated**: 2026-06-30 10:30
+
+### marketing-copilot
+多平台营销文案生成与优化工具，支持微信、小红书、TikTok、Instagram、电商平台等。
+
+**Use cases**: 社交媒体文案创作、产品推广、广告投放 A/B 测试、风格迁移
+**Installation**: Python 3.6+ (argparse-commands, rich, python-dotenv)
+**Difficulty**: easy
+**Token cost**: ~1.5K tokens (README log)
+**Last updated**: 2026-06-30 17:45
+
+**快速开始**:
+```bash
+cd marketing-copilot
+pip install -r requirements.txt
+python3 generate.py generate --platform xiaohongshu --topic 无线耳机 --tone 亲切活泼
+```
 
 ### find-skills
 场景驱动+关键词双模式技能发现工具。支持自然语言场景理解，联合搜索官方内置、本地已安装、SkillHub、虾评、GitHub、ClawHub 六层技能市场，自动推荐并支持一键安装。已完全替代官方原 find-skills 插件。

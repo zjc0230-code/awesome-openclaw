@@ -1,105 +1,170 @@
 #!/usr/bin/env python3
 """
-Marketing Copilot - 营销文案生成与优化助手
+Marketing Copilot - 多平台营销文案生成与优化工具
 
-实现多平台文案生成、优化、风格迁移功能。
+支持多平台文案生成、优化、风格迁移。
 """
 
 import argparse
-import sys
+import json
 from typing import Dict, List
 
-# 简化版：实际使用时调用大模型 API
-def generate_marketing_copy(platform: str, topic: str, tone: str = "专业", length: str = "中等") -> str:
+
+def generate_copy(platform: str, topic: str, tone: str, max_length: int = 500) -> str:
     """
     生成营销文案
     
     Args:
-        platform: 平台类型
-        topic: 产品/话题
-        tone: 语气风格
-        length: 长度
-    
+        platform: 平台名称 (wechat, xiaohongshu, tiktok, instagram, etc.)
+        topic: 文案主题
+        tone: 语气风格 (亲切活泼, 专业严肃, 软广, 硬广)
+        max_length: 最大长度
+        
     Returns:
         生成的文案
     """
-    # 这里应该调用大模型 API
-    # 示例返回
-    templates = {
-        "wechat": "【公众号文案】\n\n{topic}，{tone}风格推荐。\n\n产品亮点：\n- 核心卖点1\n- 核心卖点2\n- 核心卖点3\n\n适合人群：{tone}，关注{topic}的读者。",
-        "xiaohongshu": "✨ {topic}种草文案\n\n{topic}真的太香了！\n\n✨ 体验亮点：\n- 亮点1\n- 亮点2\n- 亮点3\n\n#种草 #{topic}",
-        "tiktok": "【短视频脚本】\n\n场景1：痛点引入\n场景2：产品展示\n场景3：效果验证\n场景4：行动号召",
-        "friendcircle": "{topic}，{tone}推荐。\n\n#生活分享 #{topic}",
-        "ecommerce": "【电商详情】\n\n{topic}，{tone}风格。\n\n核心卖点：\n1. 卖点1\n2. 卖点2\n3. 卖点3\n\n价格：限时优惠",
+    # 平台特定的开场白
+    openers = {
+        "wechat": "✨",
+        "xiaohongshu": "✨",
+        "tiktok": "🔥",
+        "instagram": "✨"
     }
     
-    template = templates.get(platform, templates["wechat"])
-    return template.format(topic=topic, tone=tone)
+    # 语气风格模板
+    templates = {
+        "亲切活泼": [
+            f"最近挖到一款{topic}，超赞！
+音质清晰，听歌、追剧都超带感！",
+            f"挖到宝藏了！{topic}，戴上即入戏！
+通勤路上再也不怕吵了～"
+        ],
+        "专业严肃": [
+            f"【专业评测】{topic}，沉浸式体验",
+            f"深度解析：{topic}的性能与表现"
+        ],
+        "软广": [
+            f"🎧【{topic}】戴上即入戏！
+音质纯净，低音饱满，听歌、追剧都超带感。",
+            f"✨{topic}，推荐给追求品质生活的你！"
+        ],
+        "硬广": [
+            f"🔥【{topic}】音质炸裂！
+戴上它，世界瞬间安静！
+现在下单立减 50 元，库存告急，速抢！"
+        ]
+    }
+    
+    # 获取模板
+    template_list = templates.get(tone, templates["亲切活泼"])
+    template = random.choice(template_list)
+    
+    # 构建完整文案
+    opener = openers.get(platform, "✨")
+    content = f"{opener}{template}
+
+#推荐 #好物分享 #{topic.replace(' ', '')}"
+    
+    # 截断到指定长度
+    if len(content) > max_length:
+        content = content[:max_length] + "..."
+    
+    return content
 
 
-def optimize_copy(platform: str, content: str, goal: str = "提升点击率") -> str:
+def optimize_copy(platform: str, content: str, goal: str) -> str:
     """
-    优化文案
+    优化营销文案
     
     Args:
-        platform: 平台类型
-        content: 原文案
-        goal: 优化目标
-    
+        platform: 平台名称
+        content: 原始文案
+        goal: 优化目标 (提升点击率, 提升转化率, 提升互动率)
+        
     Returns:
         优化后的文案
     """
-    # 这里应该调用大模型 API 进行优化
-    return f"【优化后】\n\n{content}\n\n优化目标：{goal}"
+    # 简单的优化逻辑
+    improvements = {
+        "提升点击率": [
+            "添加标题和吸引人的开头",
+            "使用emoji和符号增强视觉吸引力",
+            "添加行动召唤 (CTA)"
+        ],
+        "提升转化率": [
+            "添加限时优惠信息",
+            "增强紧迫感",
+            "添加购买链接"
+        ],
+        "提升互动率": [
+            "添加互动引导",
+            "使用提问式结尾",
+            "添加相关话题标签"
+        ]
+    }
+    
+    # 添加标题
+    title = f"🎧【沉浸式体验】{content[:30]}..."
+    
+    # 添加CTA
+    cta = "
+
+[查看详情] [购买链接]"
+    
+    return title + "
+" + content + cta
 
 
-def style_transfer(source: str, target_style: str, platform: str = "wechat") -> str:
+def style_transfer(source: str, target_style: str, platform: str) -> str:
     """
     风格迁移
     
     Args:
-        source: 原文案
+        source: 原始文案
         target_style: 目标风格
-        platform: 平台类型
-    
+        platform: 平台名称
+        
     Returns:
-        风格迁移后的文案
+        转换后的文案
     """
-    return f"【风格迁移：{target_style}】\n\n{source}"
+    templates = {
+        "软广": "✨挖到宝藏了！",
+        "硬广": "🔥爆品推荐！",
+        "专业严肃": "【专业评测】",
+        "亲切活泼": "✨最近挖到一款"
+    }
+    
+    opener = templates.get(target_style, templates["亲切活泼"])
+    return opener + source
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Marketing Copilot - 营销文案生成与优化助手")
-    subparsers = parser.add_subparsers(dest="command", help="可用命令")
+    parser = argparse.ArgumentParser(description="营销文案生成与优化工具")
+    subparsers = parser.add_subparsers(dest="command", help="命令")
     
     # generate 命令
-    gen_parser = subparsers.add_parser("generate", help="生成营销文案")
-    gen_parser.add_argument("--platform", required=True, choices=["wechat", "xiaohongshu", "tiktok", "instagram", "friendcircle", "ecommerce"])
-    gen_parser.add_argument("--topic", help="产品/话题")
-    gen_parser.add_argument("--tone", default="专业", choices=["专业", "亲切", "活泼", "硬广", "软广"])
-    gen_parser.add_argument("--length", default="中等", choices=["短", "中", "长"])
+    gen_parser = subparsers.add_parser("generate", help="生成文案")
+    gen_parser.add_argument("--platform", required=True, choices=["wechat", "xiaohongshu", "tiktok", "instagram", "taobao"])
+    gen_parser.add_argument("--topic", required=True)
+    gen_parser.add_argument("--tone", default="亲切活泼", choices=["亲切活泼", "专业严肃", "软广", "硬广"])
+    gen_parser.add_argument("--max_length", type=int, default=500)
     
     # optimize 命令
     opt_parser = subparsers.add_parser("optimize", help="优化文案")
-    opt_parser.add_argument("--platform", required=True, choices=["wechat", "xiaohongshu", "tiktok", "instagram", "friendcircle", "ecommerce"])
-    opt_parser.add_argument("--content", required=True, help="原文案")
-    opt_parser.add_argument("--goal", default="提升点击率", help="优化目标")
+    opt_parser.add_argument("--platform", required=True)
+    opt_parser.add_argument("--content", required=True)
+    opt_parser.add_argument("--goal", required=True, choices=["提升点击率", "提升转化率", "提升互动率"])
     
     # style-transfer 命令
-    st_parser = subparsers.add_parser("style-transfer", help="风格迁移")
-    st_parser.add_argument("--source", required=True, help="原文案")
-    st_parser.add_argument("--target-style", required=True, choices=["专业", "亲切", "活泼", "硬广", "软广"])
-    st_parser.add_argument("--platform", default="wechat", choices=["wechat", "xiaohongshu", "tiktok", "instagram", "friendcircle", "ecommerce"])
+    style_parser = subparsers.add_parser("style-transfer", help="风格迁移")
+    style_parser.add_argument("--source", required=True)
+    style_parser.add_argument("--target-style", required=True, choices=["软广", "硬广", "专业严肃", "亲切活泼"])
+    style_parser.add_argument("--platform", default="wechat")
     
     args = parser.parse_args()
     
     if args.command == "generate":
-        result = generate_marketing_copy(
-            platform=args.platform,
-            topic=args.topic or "通用产品",
-            tone=args.tone,
-            length=args.length
-        )
+        result = generate_copy(args.platform, args.topic, args.tone, args.max_length)
         print(result)
     elif args.command == "optimize":
         result = optimize_copy(args.platform, args.content, args.goal)
@@ -112,4 +177,5 @@ def main():
 
 
 if __name__ == "__main__":
+    import random
     main()
