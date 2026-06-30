@@ -3,9 +3,9 @@
 AI 技能精选库 — 收录 Hermes/Cursor 高价值 Skills，工具类、营销类优先，持续迭代优化。
 
 ### 优化统计
-- **优化次数**: 78
-- **最近更新**: 2026-06-30 20:55
-- **累计 Token**: ~208.3K (78 次优化)
+- **优化次数**: 79
+- **最近更新**: 2026-06-30 22:15
+- **累计 Token**: ~210.8K (79 次优化)
 
 
 ### Contributing
@@ -36,6 +36,15 @@ GitHub authentication setup for Hermes agents using HTTPS tokens or SSH keys. Co
 **Difficulty**: easy
 **Token cost**: ~1.0K tokens (README log)
 **Last updated**: 2026-06-30 10:30
+
+### ascii-art
+ASCII art generator: pyfiglet, cowsay, boxes, image-to-ascii conversion.
+
+**Use cases**: Terminal headers, status badges, ASCII logos, image-to-text art
+**Installation**: `pip install pyfiglet cowsay boxes image-to-ascii`
+**Difficulty**: easy
+**Token cost**: ~2.5K tokens (README log)
+**Last updated**: 2026-06-30 22:15
 
 ### marketing-copilot
 多平台营销文案生成与优化工具，支持微信、小红书、TikTok、Instagram、电商平台等。
