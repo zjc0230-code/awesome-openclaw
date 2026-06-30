@@ -61,8 +61,8 @@ AI-powered marketing copy generator and optimizer for multiple platforms (WeChat
 **Use cases**: Social media posts, product copy, ad copy generation, style transfer, copy optimization
 **Installation**: Python 3.6+ (argparse-commands, rich, python-dotenv)
 **Difficulty**: easy
-**Token cost**: ~1.5K tokens (README log)
-**Last updated**: 2026-06-30 16:45
+**Token cost**: ~1.2K tokens (README log)
+**Last updated**: 2026-06-30 17:30
 
 **Recent improvements**:
 - Added 3 complete usage examples (Xiaohongshu, WeChat, TikTok)
