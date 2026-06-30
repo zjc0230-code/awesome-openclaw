@@ -98,6 +98,7 @@ zjc0230 / zjc0230@gmail.com
 ### 生产力
 - **airtable**: Airtable REST API：记录 CRUD、过滤、upsert
 - **cross-document-consistency**: 多 Markdown 文档一致性维护
+- **notion**: Notion API + ntn CLI：页面、数据库、Markdown、Workers
 - **google-workspace**: Gmail、日历、Drive、Docs、Sheets（gws CLI 或 Python）
 - **linear**: Linear：通过 GraphQL + curl 管理 Issues、项目、团队
 - **maps**: 地理编码、POI、路线、时区（OpenStreetMap/OSRM）
