@@ -71,19 +71,6 @@ python3 generate.py generate --platform xiaohongshu --topic 无线耳机 --tone 
 **Token cost**: ~1.5K tokens (README log)
 **Last updated**: 2026-06-30 15:30
 
-### marketing-copilot
-多平台营销文案生成与优化工具，支持微信、小红书、TikTok、Instagram、电商平台等。
-
-**Use cases**: 社交媒体文案创作、产品推广、广告投放 A/B 测试、风格迁移
-**Installation**: Python 3.6+ (argparse-commands, rich, python-dotenv)
-**Difficulty**: easy
-**Token cost**: ~1.2K tokens (README log)
-**Last updated**: 2026-06-30 17:30
-
-**快速开始**:
-```bash
-# 生成文案
-python3 generate.py generate --platform xiaohongshu --topic 无线耳机 --tone 亲切活泼
 
 # 优化文案
 python3 generate.py optimize --platform wechat --content "我的耳机很好听" --goal 提升点击率
