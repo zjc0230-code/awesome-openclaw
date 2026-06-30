@@ -3,9 +3,9 @@
 AI 技能精选库 — 收录 Hermes/Cursor 高价值 Skills，工具类、营销类优先，持续迭代优化。
 
 ### 优化统计
-- **优化次数**: 75
-- **最近更新**: 2026-06-30 17:30
-- **累计 Token**: ~206.1K (74 次优化)
+- **优化次数**: 76
+- **最近更新**: 2026-06-30 18:00
+- **累计 Token**: ~208.0K (75 次优化)
 
 
 ### Contributing
@@ -98,3 +98,42 @@ python3 generate.py optimize --platform wechat --content "我的耳机很好听"
 **Recent improvements**:
 - Added 3 complete usage examples (Xiaohongshu, WeChat, TikTok)
 - Improved documentation with real-world output examples
+
+### ai-coding-delegation
+Comprehensive AI coding delegation workflow using Claude Code, OpenAI Codex, or other LLM-based coding agents. Supports two-stage review: subagent execution + human review, with automatic fallback and parallel task execution.
+
+**Use cases**: Code refactoring, test generation, documentation updates, parallel task execution, agent-based code review
+**Installation**: Native to Hermes (no installation needed)
+**Difficulty**: medium
+**Token cost**: ~3.5K tokens (README log)
+**Last updated**: 2026-06-30 18:00
+
+**Quick start**:
+```python
+from hermes_tools import delegate_task
+
+# Basic delegation
+result = delegate_task({
+    "goal": "Refactor authentication module",
+    "context": "Current auth uses sessions; need JWT migration",
+    "toolsets": ["terminal", "file"]
+})
+
+# Parallel tasks
+tasks = [
+    {"goal": "Add unit tests", "context": "Missing coverage", "toolsets": ["terminal", "file"]},
+    {"goal": "Update docs", "context": "Outdated endpoints", "toolsets": ["terminal", "file"]}
+]
+results = delegate_task({"tasks": tasks, "mode": "parallel"})
+```
+
+**Core features**:
+- Two-stage review: subagent writes code → human reviews
+- Parallel execution for independent tasks
+- Fallback handling with different agents
+- Context management and tool usage tracking
+
+**Recent improvements**:
+- Added parallel task execution mode
+- Improved error handling and retry logic
+- Enhanced documentation with code examples
