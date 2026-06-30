@@ -3,9 +3,9 @@
 AI 技能精选库 — 收录 Hermes/Cursor 高价值 Skills，工具类、营销类优先，持续迭代优化。
 
 ### 优化统计
-- **优化次数**: 71
-- **最近更新**: 2026-06-30 16:30
-- **累计 Token**: ~204.4K (71 次优化)
+- **优化次数**: 72
+- **最近更新**: 2026-06-30 16:45
+- **累计 Token**: ~204.9K (72 次优化)
 
 
 ### Contributing
@@ -62,4 +62,8 @@ AI-powered marketing copy generator and optimizer for multiple platforms (WeChat
 **Installation**: Python 3.6+ (argparse-commands, rich, python-dotenv)
 **Difficulty**: easy
 **Token cost**: ~1.5K tokens (README log)
-**Last updated**: 2026-06-30 09:46
+**Last updated**: 2026-06-30 16:45
+
+**Recent improvements**:
+- Added 3 complete usage examples (Xiaohongshu, WeChat, TikTok)
+- Improved documentation with real-world output examples
