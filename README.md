@@ -3,9 +3,9 @@
 AI 技能精选库 — 收录 Hermes/Cursor 高价值 Skills，工具类、营销类优先，持续迭代优化。
 
 ### 优化统计
-- **优化次数**: 84
-- **最近更新**: 2026-07-01 16:30
-- **累计 Token**: ~216.5K (84 次优化)
+- **优化次数**: 85
+- **最近更新**: 2026-07-01 22:50
+- **累计 Token**: ~217.0K (85 次优化)
 
 ### Contributing
 - 内容真实，禁止密钥入库
@@ -94,7 +94,8 @@ zjc0230 / zjc0230@gmail.com
 - **jupyter-live-kernel**: Python 迭代执行：live Jupyter kernel (hamelnb)
 
 ### 营销
-- **marketing-copilot**: 营销文案生成：社交媒体、广告、邮件营销
+- **marketing-copilot/README.md**: 营销文案助手 - 多平台文案生成、优化、风格迁移
+- **marketing-copilot/SKILL.md**: 营销文案智能助手 - 支持多平台文案生成、优化、风格迁移
 
 ### 生产力
 - **airtable**: Airtable REST API：记录 CRUD、过滤、upsert
