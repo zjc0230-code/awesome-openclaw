@@ -175,9 +175,11 @@ zjc0230 / zjc0230@gmail.com
 ## 📚 分类索引
 
 ### 按用途
-- **工具类**: file-magic、automation、devops、harness-ops
-- **营销类**: marketing-copilot（文案生成、风格迁移）、social-media-automator
+- **工具类**: file-magic、automation、devops、harness-ops、find-skills
+- **营销类**: marketing-copilot（文案生成）、social-media-automator
 - **开发类**: ai-coding-delegation、github-workflow、test-driven-development
+- **数据类**: stock-tencent-analyst、stock-market-analysis
+- **研究类**: research-workflow、pdf
 
 ### 按难度
 - **简单**: ascii-art、find-skills、google-workspace
