@@ -3,9 +3,9 @@
 AI 技能精选库 — 收录 Hermes/Cursor 高价值 Skills，工具类、营销类优先，持续迭代优化。
 
 ### 优化统计
-- **优化次数**: 83
+- **优化次数**: 84
 - **最近更新**: 2026-07-01 16:30
-- **累计 Token**: ~216.1K (83 次优化)
+- **累计 Token**: ~216.5K (84 次优化)
 
 ### Contributing
 - 内容真实，禁止密钥入库
@@ -176,7 +176,7 @@ zjc0230 / zjc0230@gmail.com
 
 ### 按用途
 - **工具类**: file-magic、automation、devops、harness-ops
-- **营销类**: marketing-copilot、social-media-automator
+- **营销类**: marketing-copilot（文案生成、风格迁移）、social-media-automator
 - **开发类**: ai-coding-delegation、github-workflow、test-driven-development
 
 ### 按难度
