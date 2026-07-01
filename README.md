@@ -74,7 +74,6 @@ zjc0230 / zjc0230@gmail.com
 - **subagent-driven-development**: 计划执行：子代理（2 阶审查）
 - **systematic-debugging**: 4 阶根因调试：理解 Bug 再修复
 - **test-driven-development**: TDD：强制 RED-GREEN-REFACTOR、测试先行
-- **writing-plans**: 实现计划编写：小任务、路径、代码
 
 ### 数据科学
 - **data-science**: 数据科学工作流：交互式探索、Jupyter、分析、可视化
